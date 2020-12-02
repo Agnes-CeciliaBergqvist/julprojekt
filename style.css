@@ -1,4 +1,56 @@
-body {
-  background-color: aqua;
-  color: brown; 
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#more {
+  display: none; }
+
+.menu {
+  position: relative;
+  background-color: white;
+  height: 5rem; }
+
+.logo {
+  position: absolute;
+  width: 4rem;
+  left: 1rem;
+  top: 1.5rem; }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.nav-bar-a {
+  text-decoration: none;
+  padding: 2rem;
+  text-align: center; }
+
+.nav-bar a:hover {
+  color: black; }
+
+a:hover, a:visited, a:link {
+  color: #343a40; }
+
+.flex-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row; }
+
+article {
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 10rem; }
+
+.card-p {
+  width: 10rem; }
+
+#myBtn {
+  color: coral;
+  border: none; }
