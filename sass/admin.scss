@@ -1,0 +1,23 @@
+#admin-body {
+    background-color: lightblue;
+}
+
+#admin-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-headline {
+    padding: 10rem;
+    padding-bottom: 3rem;
+}
+
+.admin-add-btn {
+    margin-top: 2rem;
+    padding: 0.5rem; 
+    border-radius: 0.5rem 0.5rem; 
+    background-color: darkgrey; 
+}

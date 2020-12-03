@@ -1,0 +1,19 @@
+.flex-card-container { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    flex-direction: row;
+    
+    }
+
+article { 
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    width: 10rem;
+    }
+.card-p {
+    width: 10rem;
+}    
