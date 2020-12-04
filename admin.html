@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="javascript.js" defer></script>
+
     <title>Admin</title>
 </head>
 
-<body>
-    Tjohoo
-<!-- Input fields with headline, image, product description, price -->
-<form>
-    
-    <input type="text" id="headline" placeholder="Add headline">
-    <!-- image <input type="text" id="headline" placeholder="Add headline">-->
-    <input type="text" id="prd-desp" placeholder="Add description">
-    <input type="number" id="price" placeholder="Add price">
+<body id="admin-body">
+
+    <!-- Input fields with headline, image, product description, price -->
+
+    <div id="admin-form">
+
+        <h2 class="admin-headline"> Admin - lägg till ny produkt </h2>
+        <form>
+
+            <!-- image <input type="text" id="headline" placeholder="Add headline">-->
+            <input type="text" id="headline" placeholder="Add headline">
+            <input type="text" id="prd-desp" placeholder="Add description">
+            <input type="number" id="price" placeholder="Add price">
+
+        </form>
+
+        <!-- button, add button -->
+        <button onclick="addPrd()" class="admin-add-btn"> Add </button>
+
+        <!-- edit button -->
+
+    </div>
 
 
-</form>
+    <!-- New products, later to be editable-->
+    <div id="admin-new-prd">
+        <h3> Här kommer nya produkter att ligga och i nästa sprint kommer de att kunna redigeras innan man klickar på publish</h3>
 
-<!-- button, add button -->
-<button onclick="add()" class="add-btn"> Add </button>
+            <ul class="admin-prd-list">
+            <!-- Innertext-->
+            </ul>
+
+<!--
+    </div>
+     <div id="index-new-prd">
+        <h3> Här kommer nya produkter att ligga som är redo att publiceras</h3>
+
+            <ul class="index-prd-list">
+            Innertext 
+            </ul>
+        -->
 
 
-<!-- edit button -->
 
-
-
+     <button onclick="publishPrd()" class="admin-publish-btn"> Publish </button>
 
 
 
 </body>
 
 </html>
+
+

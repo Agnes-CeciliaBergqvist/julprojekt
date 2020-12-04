@@ -1,0 +1,43 @@
+#admin-body {
+    background-color: lightblue;
+}
+
+#admin-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-headline {
+    padding: 10rem;
+    padding-bottom: 3rem;
+}
+
+.admin-add-btn {
+    margin-top: 2rem;
+    padding: 0.5rem; 
+    border-radius: 0.5rem 0.5rem; 
+    background-color: darkgrey; 
+}
+
+#admin-new-prd {
+    background-color: turquoise; 
+    height: auto;
+    padding: 2rem;
+}
+
+#index-new-prd  {
+    background-color: rgb(108, 173, 64); 
+    height: auto;
+    padding: 2rem;
+}
+
+
+.admin-publish-btn {
+    margin-top: 2rem;
+    padding: 0.5rem; 
+    border-radius: 0.5rem 0.5rem; 
+    background-color: darkgrey; 
+}
