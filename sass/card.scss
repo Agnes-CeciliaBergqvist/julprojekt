@@ -6,22 +6,17 @@
     
     }
 
-article { 
-    border: 2px solid gray;
+.article-card { 
     display: flex;
     flex-direction: column;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
     width: 10rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    padding-bottom: 2rem;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     }
-    
-.card-p {
-    width: 10rem;
-}    
 
 .card-img {
     width: 50%;

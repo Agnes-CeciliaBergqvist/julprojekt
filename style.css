@@ -1,83 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-#more {
-  display: none; }
-
-#admin-body {
-  background-color: lightblue; }
-
-#admin-form {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.admin-headline {
-  padding: 10rem;
-  padding-bottom: 3rem; }
-
-.admin-add-btn {
-  margin-top: 2rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem 0.5rem;
-  background-color: darkgrey; }
-
-#admin-new-prd {
-  background-color: turquoise;
-  height: auto;
-  padding: 2rem; }
-
-#index-new-prd {
-  background-color: #6cad40;
-  height: auto;
-  padding: 2rem; }
-
-.admin-publish-btn {
-  margin-top: 2rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem 0.5rem;
-  background-color: darkgrey; }
-
-.menu {
-  position: relative;
-  background-color: white;
-  height: 5rem; }
-
-.logo {
-  position: absolute;
-  width: 4rem;
-  left: 1rem;
-  top: 1.5rem; }
-
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.nav-bar-a {
-  text-decoration: none;
-  padding: 2rem;
-  text-align: center; }
-
-.nav-bar a:hover {
-  color: black; }
-
-a:hover, a:visited, a:link {
-  color: #343a40; }
-
 .flex-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row; }
 
-article {
-  border: 2px solid gray;
+.article-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -85,11 +12,8 @@ article {
   width: 10rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  padding-bottom: 2rem;
-  font-family: Arial, Helvetica, sans-serif; }
-
-.card-p {
-  width: 10rem; }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px; }
 
 .card-img {
   width: 50%;
@@ -102,7 +26,3 @@ article {
 
 h3 {
   font-size: 13px; }
-
-#myBtn {
-  color: coral;
-  border: none; }
