@@ -46,10 +46,26 @@ article {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 10rem; }
+  width: 10rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .card-p {
   width: 10rem; }
+
+.card-img {
+  width: 50%;
+  margin: auto; }
+
+.button-flex {
+  border: none;
+  padding: 6px;
+  margin-top: 1rem; }
+
+h3 {
+  font-size: 13px; }
 
 #myBtn {
   color: coral;

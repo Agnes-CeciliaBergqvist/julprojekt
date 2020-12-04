@@ -1,4 +1,4 @@
-//Read more button
+//Read more button - product card
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
