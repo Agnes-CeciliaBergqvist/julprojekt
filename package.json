@@ -2,7 +2,7 @@
   "name": "gruppprojekt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "javascript.js",
   "scripts": 
   { "start": "node-sass sass/main.scss style.css -w" 
   },

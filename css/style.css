@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html, body {
+        font-size: 1rem;
+        font-family: serif;
+}
+/* Header: Navbar */
+.menu {
+  display: flex;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 4px#ccc;
+
+}
+.nav-bar {
+  display: flex;
+  padding: 2rem; /* to align child items in center */
+  justify-content: space-between;
+  text-align: right;
+  width: 1000px;
+  padding-bottom: 16px;
+
+}
+#page-logo span {
+   font-weight: 900;
+   color: #27ae60;
+   margin-bottom: 4px;
+}
+.company-logo {
+  font-size: 36px;
+  color: #9b59b6;
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  padding-left:12px;
+}
+
+.nav-bar {
+  text-decoration: none;
+  position:fixed;
+  
+}
+.nav-bar ul {
+  display: flex;
+  padding-left: 0;
+  flex-wrap: wrap;
+  
+  /*justify-content: space-around;*/
+
+}
+#nav-container {
+  display: flex;
+  align-items: flex-end;
+}
+#nav-container li {
+  display: inline-block;
+
+  margin: 0 16px; /*spacing between link elements*/
+}
+li .nav-bar-a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform:uppercase;
+}
+.nav-bar-a {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left:auto;
+  color: #2c3e50;
+  margin: 0;
+  padding: 24px 10px 24px 24px;
+}
+.nav-bar-a:visited  {
+  color: #9b59b6;
+}
+
+
+/*   ---------------------------------  */
+#more {
+  display: none; }
+
+.flex-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row; }
+
+article {
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 10rem; }
+
+.card-p {
+  width: 10rem; }
+
+#myBtn {
+  color: coral;
+  border: none; }
