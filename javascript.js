@@ -36,8 +36,10 @@ function addPrd() {
 
 }
 
-// locally storage js, loopa igenom 
 
+
+/*
+// locally storage js, loopa igenom - Rakib kommer gå igenom 
 
 // Publish new products onto webshop/index.html 
 function publishPrd() {
@@ -54,3 +56,4 @@ function publishPrd() {
   ul.appendChild(li); 
 
 }
+*/
