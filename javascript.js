@@ -30,12 +30,15 @@ function addPrd() {
   // declares and appends image to news products list on admin.html
   var prdImage = document.createElement("img"); // declares and creates img element
   prdImage.src = "images/opi04.webp"; // sets image source
-  document.querySelector("#admin-prd-img").appendChild(prdImage); // chooses html element and adds new img element 
+ // document.querySelector("#admin-prd-img").appendChild(prdImage); // chooses html element and adds new img element 
+  document.querySelector(".admin-prd-list").appendChild(prdImage);
   console.log(prdImage)
 
   // appends data list (new products) on admin.html 
   var li = document.createElement("li"); // declares and creates li element
   li.innerText = headline + " " + prdName + " " + prdPrice; // chooses what data to put into li element 
+  console.log(li)
+  
   var ul = document.querySelector(".admin-prd-list"); // declares and choose pre-existing element from html  
   ul.appendChild(li); // appends JS-created li element to ul element in html
 
