@@ -23,10 +23,15 @@ var newProductList = []; // Global array for new products
 
 function addPrd() {
 
-  // var prdImage
   var headline = document.querySelector("#headline").value; // Headline
   var prdName = document.querySelector("#prd-desp").value; // Product Description
   var prdPrice = document.querySelector("#price").value*1; // Product Price
+  
+  // declares and appends image to news products list on admin.html
+  var image = document.createElement("img"); // declares and creates img element
+  image.src = "images/opi04.webp"; // sets image source
+  document.querySelector(".admin-prd-list").appendChild(image); // chooses html element and adds new img element 
+
 
   // appends data list (new products) on admin.html 
   var li = document.createElement("li"); // declares and creates li element
@@ -34,16 +39,16 @@ function addPrd() {
   var ul = document.querySelector(".admin-prd-list"); // declares and choose pre-existing element from html  
   ul.appendChild(li); // appends JS-created li element to ul element in html
 
-  var prdCard = document.querySelector("article");
-  prdCard.innerText = headline + " " + prdName + " " + prdPrice;
-  
+
+
 
 }
 
 
 
+
 /*
-// locally storage js, loopa igenom - Rakib kommer gå igenom 
+// local storage js, loopa igenom - Rakib kommer gå igenom 
 
 // Publish new products onto webshop/index.html 
 function publishPrd() {
