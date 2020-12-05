@@ -1,0 +1,37 @@
+.menu {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    // opacity: 0.5;
+    height: 5rem;
+    }
+    
+    .logo {
+    position: absolute;
+    width: 4rem;
+    left: 1rem;
+    top: 1.5rem;
+    }
+    
+    .nav-bar {
+    display:flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    }
+    
+    .nav-bar-a {
+    text-decoration: none;
+    padding: 2rem;
+    text-align: center;
+    }
+    
+    .nav-bar a:hover {
+    // background-color: rgb(61, 64, 91);
+    color:rgb(0, 0, 0);
+    // border-radius: 1rem 1rem;
+    
+    }
+    
+    a:hover, a:visited, a:link {
+    color: rgb(52, 58, 64);
+    }
