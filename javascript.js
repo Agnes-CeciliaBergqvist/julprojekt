@@ -34,6 +34,10 @@ function addPrd() {
   var ul = document.querySelector(".admin-prd-list"); // declares and choose pre-existing element from html  
   ul.appendChild(li); // appends JS-created li element to ul element in html
 
+  var prdCard = document.querySelector("article");
+  prdCard.innerText = headline + " " + prdName + " " + prdPrice;
+  
+
 }
 
 

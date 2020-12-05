@@ -1,6 +1,8 @@
 #admin-body {
-    background-color: lightblue;
+    background-color: rgb(126, 126, 126);
 }
+
+/* Input fields*/
 
 #admin-form {
     display: flex;
@@ -15,17 +17,38 @@
     padding-bottom: 3rem;
 }
 
-.admin-add-btn {
+/* Buttons below input field*/ 
+
+#admin-btns-flex {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.admin-add-btn, .admin-edit-btn, .admin-publish-btn {
     margin-top: 2rem;
     padding: 0.5rem; 
     border-radius: 0.5rem 0.5rem; 
     background-color: darkgrey; 
 }
 
+/* New products to be added, edited and published in webshop */
+
 #admin-new-prd {
-    background-color: turquoise; 
+    background-color: rgb(204, 204, 204); 
     height: auto;
     padding: 2rem;
+    // width: 50%;
+    // display:flex;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // align-content: center;
 }
 
 #index-new-prd  {
@@ -35,9 +58,6 @@
 }
 
 
-.admin-publish-btn {
-    margin-top: 2rem;
-    padding: 0.5rem; 
-    border-radius: 0.5rem 0.5rem; 
-    background-color: darkgrey; 
-}
+.admin-prd-list-h3 {
+    font-size: 1.7rem;
+} 
