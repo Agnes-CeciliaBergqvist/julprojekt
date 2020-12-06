@@ -16,22 +16,27 @@ function myFunction() {
   }
 
 
-var newProductList = []; // Global array for new products   
+// var newProductList = []; // Global array for new products   
 
-
-// Creating a function to add new products in admin.html
-
+// A function to add new products in admin.html
 function addPrd() {
 
   var headline = document.querySelector("#headline").value; // Headline
   var prdName = document.querySelector("#prd-desp").value; // Product Description
   var prdPrice = document.querySelector("#price").value*1; // Product Price
   
-  // declares and appends image to news products list on admin.html
+  // declares and appends set image to news products list on admin.html
   var prdImage = document.createElement("img"); // declares and creates img element
+
+
+  // VILL UPPDATERA IMG SRC NEDAN TILL SRC FRÅN UPPLADDAT FORMULÄR, MEN HUR?
   prdImage.src = "images/opi04.webp"; // sets image source
+
+
   document.querySelector(".admin-prd-list").appendChild(prdImage);
   console.log(prdImage)
+
+
 
   // appends data list (new products) on admin.html 
   var li = document.createElement("li"); // declares and creates li element
@@ -41,8 +46,11 @@ function addPrd() {
   var ul = document.querySelector(".admin-prd-list"); // declares and choose pre-existing element from html  
   ul.appendChild(li); // appends JS-created li element to ul element in html
 
+ 
 
 }
+
+
 
 
 

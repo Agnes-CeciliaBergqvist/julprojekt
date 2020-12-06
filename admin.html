@@ -11,17 +11,6 @@
     <title>Admin</title>
 </head>
 
-<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
-<p><img id="output" width="200" /></p>
-
-<script>
-var loadFile = function(event) {
-	var image = document.getElementById('output');
-	image.src = URL.createObjectURL(event.target.files[0]);
-};
-</script>
-
 <body id="admin-body">
 
     <!-- Input fields with headline, image, product description, price -->
@@ -31,7 +20,8 @@ var loadFile = function(event) {
         <h2 class="admin-headline"> Admin - lägg till ny produkt </h2>
         <form>
 
-            <!-- image <input type="text" id="headline" placeholder="Add headline">-->
+            <input type="file" name="image" id="admin-prdImg" >
+
             <input type="text" id="headline" placeholder="Add headline">
             <input type="text" id="prd-desp" placeholder="Add description">
             <input type="number" id="price" placeholder="Add price">
@@ -59,7 +49,7 @@ var loadFile = function(event) {
     <div id="admin-new-prd">
         <h3 class="admin-prd-list-h3"> Här kommer nya produkter att ligga och i nästa sprint kommer de att kunna
             redigeras innan man klickar på publish</h3>
-        
+
         <div class="admin-flex-items">
 
             <div id="admin-prd-img">
@@ -69,7 +59,7 @@ var loadFile = function(event) {
             <ul class="admin-prd-list">
                 <!-- InnerHTML "li" -->
             </ul>
-        </div>    
+        </div>
 
     </div>
 
