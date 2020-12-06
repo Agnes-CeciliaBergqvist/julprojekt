@@ -8,13 +8,61 @@
     <title> </title>
     
 <link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="navbar.css" rel="stylesheet" type="text/css"/>
 <script src="javascript.js" defer></script>
 
 
 </head>
 
 <body>
-    <header class="menu">
+    <header>
+        <nav id="topbar">
+            <div id="left-menu-items">
+                <div id="logo">
+                    <a href="/index.html"><span>Nail</span>CITY</a>
+                </div>
+                <a href="#">Nail Polish</a>
+                <a href="#">New Arrivals</a>
+            </div>
+            <div id="search-div">
+                <div id="search-item">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input id="search-box" type="text" name="search" placeholder="Search for Nail Polish" />
+                </div>
+            </div>
+            <div id="right-menu-items">
+                <div id="cart-wrapper">
+                    <p id="cart-count"></p>
+                    <a href="checkout.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+                </div>
+                <img src="img/photo.jpg" />
+            </div>
+    
+            <i id="sidebar-btn" class="fas fa-bars"></i>
+            <div id="sidebar">
+                <div id="sidebar-wrapper">
+                    <div id="sidebar-upper">
+                        <div id="cross">
+                            <div class="cross-1"></div>
+                            <div class="cross-2"></div>
+                        </div>
+                        <img src="img/photo.jpg" />
+                    </div>
+                    <div id="search-item">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input id="search-box" type="text" name="search"
+                            placeholder="Search for Clothing and Accessories" />
+                    </div>
+    
+                    <a href="index.html">Home</a>
+                    <a href="#clothing-section">Clothing</a>
+                    <a href="#accessory-section">Accessories</a>
+                </div>
+            </div>
+        </nav>
+        <div id="overlay"></div>
+    </header>
+    <!--<header class="menu">
 
         <a href="homepage.html"> <img class="logo" src="/pictures/TripPlanLogo.png" alt="Trip Plan Logo"> </a>
         
@@ -24,7 +72,7 @@
         <a class="nav-bar-a" href="homepage.html"> Travel Vlog </a>
         </nav>
         
-        </header>
+        </header>-->
 
     <section class="flex-card-container">
 
