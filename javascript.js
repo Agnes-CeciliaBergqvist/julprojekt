@@ -30,7 +30,6 @@ function addPrd() {
   // declares and appends image to news products list on admin.html
   var prdImage = document.createElement("img"); // declares and creates img element
   prdImage.src = "images/opi04.webp"; // sets image source
- // document.querySelector("#admin-prd-img").appendChild(prdImage); // chooses html element and adds new img element 
   document.querySelector(".admin-prd-list").appendChild(prdImage);
   console.log(prdImage)
 
