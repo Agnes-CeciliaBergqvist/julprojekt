@@ -1,0 +1,55 @@
+/*mother to login form*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color:#f99f30;
+    
+   
+
+}
+/*daughter to container*/
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 13rem; 
+
+}
+/*img og avatar*/
+.avatar {
+    width: 40%;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    margin: 12px 0 12px 57px;
+}
+/*classes for label to input fields */
+.name, .password {
+    display: flex;
+    margin: 3.5px;
+}
+/*the whole form*/
+#form_id {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+/*button for login*/
+#submit {
+    margin: 0.2rem;
+    background-color: #4CAF50;
+    color: white; 
+    padding: 14px 20px; 
+    margin: 8px 0;
+    border: none; 
+}
+/*button for hover*/
+#submit:hover { 
+    opacity: 0.8;
+
+}
+
+

@@ -20,47 +20,54 @@
         <h2 class="admin-headline"> Admin - lägg till ny produkt </h2>
         <form>
 
-            <!-- image <input type="text" id="headline" placeholder="Add headline">-->
+            <input type="file" name="image" id="admin-prdImg" >
+
             <input type="text" id="headline" placeholder="Add headline">
             <input type="text" id="prd-desp" placeholder="Add description">
             <input type="number" id="price" placeholder="Add price">
 
         </form>
+    </div>
+
+    <div id="admin-btns-flex">
 
         <!-- button, add button -->
         <button onclick="addPrd()" class="admin-add-btn"> Add </button>
 
         <!-- edit button -->
+        <button class="admin-edit-btn"> Edit </button>
+
+        <!-- Publish button-->
+        <button onclick="publishPrd()" class="admin-publish-btn"> Publish </button>
+
 
     </div>
+
 
 
     <!-- New products, later to be editable-->
     <div id="admin-new-prd">
-        <h3> Här kommer nya produkter att ligga och i nästa sprint kommer de att kunna redigeras innan man klickar på publish</h3>
+        <h3 class="admin-prd-list-h3"> Här kommer nya produkter att ligga och i nästa sprint kommer de att kunna
+            redigeras innan man klickar på publish</h3>
+
+        <div class="admin-flex-items">
+
+            <div id="admin-prd-img">
+                <!-- InnerHTML "li" -->
+            </div>
 
             <ul class="admin-prd-list">
-            <!-- Innertext-->
+                <!-- InnerHTML "li" -->
             </ul>
+        </div>
 
-<!--
     </div>
-     <div id="index-new-prd">
-        <h3> Här kommer nya produkter att ligga som är redo att publiceras</h3>
-
-            <ul class="index-prd-list">
-            Innertext 
-            </ul>
-        -->
 
 
 
-     <button onclick="publishPrd()" class="admin-publish-btn"> Publish </button>
 
 
 
 </body>
 
 </html>
-
-

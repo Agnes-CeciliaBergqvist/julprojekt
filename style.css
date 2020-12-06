@@ -1,3 +1,148 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#more {
+  display: none; }
+
+#admin-body {
+  background-color: #7e7e7e; }
+
+/* Input fields*/
+#admin-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.admin-headline {
+  padding: 10rem;
+  padding-bottom: 3rem; }
+
+/* Buttons below input field*/
+#admin-btns-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.admin-add-btn, .admin-edit-btn, .admin-publish-btn {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem 0.5rem;
+  background-color: darkgrey; }
+
+/* New products to be added, edited and published in webshop */
+#admin-new-prd {
+  background-color: #cccccc;
+  height: auto;
+  padding: 2rem;
+  background-color: #47a707;
+  padding: 2rem;
+  border: black;
+  border-style: solid;
+  border-width: 2px; }
+
+.admin-flex-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.admin-prd-list {
+  list-style-type: none; }
+
+.admin-prd-list > li {
+  padding: 1rem; }
+
+/* Används när bildens appends till ul ".admin-prd-list*/
+.admin-prd-list > img {
+  width: 20%;
+  height: 20%;
+  padding: 1rem; }
+
+.admin-prd-list-h3 {
+  font-size: 1.7rem; }
+
+/*mother to login form*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f99f30; }
+
+/*daughter to container*/
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 13rem; }
+
+/*img og avatar*/
+.avatar {
+  width: 40%;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  margin: 12px 0 12px 57px; }
+
+/*classes for label to input fields */
+.name, .password {
+  display: flex;
+  margin: 3.5px; }
+
+/*the whole form*/
+#form_id {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+/*button for login*/
+#submit {
+  margin: 0.2rem;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none; }
+
+/*button for hover*/
+#submit:hover {
+  opacity: 0.8; }
+
+.menu {
+  position: relative;
+  background-color: white;
+  height: 5rem; }
+
+.logo {
+  position: absolute;
+  width: 4rem;
+  left: 1rem;
+  top: 1.5rem; }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.nav-bar-a {
+  text-decoration: none;
+  padding: 2rem;
+  text-align: center; }
+
+.nav-bar a:hover {
+  color: black; }
+
+a:hover, a:visited, a:link {
+  color: #343a40; }
+
 .flex-card-container {
   display: flex;
   flex-wrap: wrap;
@@ -26,3 +171,7 @@
 
 h3 {
   font-size: 13px; }
+
+#myBtn {
+  color: coral;
+  border: none; }

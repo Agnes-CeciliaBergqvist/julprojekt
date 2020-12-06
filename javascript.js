@@ -32,30 +32,47 @@
 
 
 
-var newProductList = []; // Global array for new products   
+// var newProductList = []; // Global array for new products   
 
-
-// Creating a function to add new products in admin.html
-
+// A function to add new products in admin.html
 function addPrd() {
 
-  // var prdImage
   var headline = document.querySelector("#headline").value; // Headline
   var prdName = document.querySelector("#prd-desp").value; // Product Description
   var prdPrice = document.querySelector("#price").value*1; // Product Price
+  
+  // declares and appends set image to news products list on admin.html
+  var prdImage = document.createElement("img"); // declares and creates img element
+
+
+  // VILL UPPDATERA IMG SRC NEDAN TILL SRC FRÅN UPPLADDAT FORMULÄR, MEN HUR?
+  prdImage.src = "images/opi04.webp"; // sets image source
+
+
+  document.querySelector(".admin-prd-list").appendChild(prdImage);
+  console.log(prdImage)
+
+
 
   // appends data list (new products) on admin.html 
   var li = document.createElement("li"); // declares and creates li element
   li.innerText = headline + " " + prdName + " " + prdPrice; // chooses what data to put into li element 
+  console.log(li)
+  
   var ul = document.querySelector(".admin-prd-list"); // declares and choose pre-existing element from html  
   ul.appendChild(li); // appends JS-created li element to ul element in html
+
+ 
 
 }
 
 
 
+
+
+
 /*
-// locally storage js, loopa igenom - Rakib kommer gå igenom 
+// local storage js, loopa igenom - Rakib kommer gå igenom 
 
 // Publish new products onto webshop/index.html 
 function publishPrd() {
