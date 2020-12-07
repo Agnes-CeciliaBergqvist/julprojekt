@@ -6,27 +6,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> </title>
-    
+    <!-- Fontawesome-->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- CSS-->
 <link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="header.css" rel="stylesheet" type="text/css"/>
+<link href="footer.css" rel="stylesheet" type="text/css"/>
+
+<!-- Javascript-->
 <script src="javascript.js" defer></script>
 
 
 </head>
 
 <body>
-    <header class="menu">
+    <header>
+        <nav id="topbar">
+            <div id="navbar-left-items">
+                <div id="logo">
+                    <a href="/index.html"><span>Nail</span>CITY</a>
+                </div>
+                <a href="#" class="nav1">Nail Polish</a>
+                <a href="#" class="nav1">New Arrivals</a>
+            </div>
+            <div id="search-div">
+                <div id="search-item">
+                    <input id="search-box" type="text" name="search" placeholder="Search for Nail Polish" />
+                </div>
+            </div>
+            <div id="navbar-right-items">
+                <i class="fas fa-user fa-lg"></i>
+                <a href="login.html" class="admin-log"> Admin Login</a>
+                
+                
+                <div id="cart-wrapper">
+                    <!--<p id="cart-count"></p>-->
+                    <!-- shopping cart has to be redirected to corresponding html file-->
+                    <a href="#" ><i class="fas fa-shopping-cart"></i>Cart</a>
+                    
+                </div>
+                
+            </div>
+    
+            <i id="sidebar-btn" class="fas fa-bars"></i>
+            <div id="responsive-menu"> <!--his menu-->
+                <input type="checkbox" class="toggler">
+                
+                
+                <div class="toggler-menu">
+                <div id="sidebar-wrapper">
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Nail Polish</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="admin.html" class="admin-log"> Admin Login</a></li>
+                    </ul>
+                </div>
+                </div>
 
-        <a href="homepage.html"> <img class="logo" src="/pictures/TripPlanLogo.png" alt="Trip Plan Logo"> </a>
-        
-        <nav class="nav-bar">
-        <a class="nav-bar-a" href="calculator.html"> Plan Your Trip </a>
-        <a class="nav-bar-a" href="homepage.html"> About Us </a>
-        <a class="nav-bar-a" href="homepage.html"> Travel Vlog </a>
+            </div>
         </nav>
-        
-        </header>
+        <!--<div id="overlay"></div>-->
+    </header>
 
+<<<<<<< HEAD
     <section class="index-flex-card-cntr">
+=======
+    <!-- Main Container with items-->
+    <section class="flex-card-container">
+>>>>>>> 57d37f4235671ecbbe5b919b480775589db2153e
 
         <article class="index-article-card">
 
@@ -301,6 +350,68 @@
         
      
     </section>
+    <footer>
+    
+    
+        <div class="left-box flex">
+            <h2>About us</h2>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odio molestiae repellendus,
+                    delectus eveniet nihil, optio maiores, quam reprehenderit corrupti architecto. Voluptate
+                    voluptatem reprehenderit magnam voluptatibus recusandae placeat rem repellendus.
+                </p>
+                <div class="social">
+                    <a href="#">
+                        <span class="fab fa-facebook-f"></span>
+                        <span class="fab fa-twitter"></span>
+                        <span class="fab fa-instagram"></span>
+                        <span class="fab fa-youtube"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="center flex">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Stockholm, Sweden</span>
+                </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text"> 08 12 34 567</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">nailcity@email.com</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="right flex">
+            <h2>Contact us</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Message *</div>
+                        <textarea id="msgForm" cols="25" rows="2" required></textarea>
+                    </div>
+                    <br />
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+    
+    </footer>
     
 
 </body>
