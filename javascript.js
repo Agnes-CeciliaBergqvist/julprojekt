@@ -1,5 +1,5 @@
 //Read more button - product card
-function myFunction() {
+/*function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
@@ -13,7 +13,23 @@ function myFunction() {
       btnText.innerHTML = "Read less";
       moreText.style.display = "inline";
     }
-  }
+  }*/
+
+  //Load more products button
+
+  /*function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }*/
+
+
+
+
+
 
 
 // var newProductList = []; // Global array for new products   
