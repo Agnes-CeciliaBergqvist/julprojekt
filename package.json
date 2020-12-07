@@ -1,15 +1,24 @@
 {
   "name": "gruppprojekt",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": 
-  { "start": "node-sass sass/main.scss style.css -w" 
+  "scripts": {
+    "start": "node-sass sass/main.scss style.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^5.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvilinP/julprojekt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AvilinP/julprojekt/issues"
+  },
+  "homepage": "https://github.com/AvilinP/julprojekt#readme",
+  "description": ""
 }
