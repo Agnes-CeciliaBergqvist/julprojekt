@@ -6,9 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> </title>
-    
+    <!-- Fontawesome-->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- CSS-->
 <link href="style.css" rel="stylesheet" type="text/css"/>
-<link href="navbar.css" rel="stylesheet" type="text/css"/>
+<link href="header.css" rel="stylesheet" type="text/css"/>
+
+<!-- Javascript-->
 <script src="javascript.js" defer></script>
 
 
@@ -17,63 +22,54 @@
 <body>
     <header>
         <nav id="topbar">
-            <div id="left-menu-items">
+            <div id="navbar-left-items">
                 <div id="logo">
                     <a href="/index.html"><span>Nail</span>CITY</a>
                 </div>
-                <a href="#">Nail Polish</a>
-                <a href="#">New Arrivals</a>
+                <a href="#" class="nav1">Nail Polish</a>
+                <a href="#" class="nav1">New Arrivals</a>
             </div>
             <div id="search-div">
                 <div id="search-item">
-                    <i class="fas fa-search" aria-hidden="true"></i>
                     <input id="search-box" type="text" name="search" placeholder="Search for Nail Polish" />
                 </div>
             </div>
-            <div id="right-menu-items">
+            <div id="navbar-right-items">
+                <i class="fas fa-user fa-lg"></i>
+                <a href="admin.html" class="admin-log"> Admin Login</a>
+                
+                
                 <div id="cart-wrapper">
-                    <p id="cart-count"></p>
-                    <a href="checkout.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+                    <!--<p id="cart-count"></p>-->
+                    <!-- shopping cart has to be redirected to corresponding html file-->
+                    <a href="#" ><i class="fas fa-shopping-cart"></i>Cart</a>
+                    
                 </div>
-                <img src="img/photo.jpg" />
+                
             </div>
     
             <i id="sidebar-btn" class="fas fa-bars"></i>
-            <div id="sidebar">
+            <div id="responsive-menu"> <!--his menu-->
+                <input type="checkbox" class="toggler">
+                
+                
+                <div class="toggler-menu">
                 <div id="sidebar-wrapper">
-                    <div id="sidebar-upper">
-                        <div id="cross">
-                            <div class="cross-1"></div>
-                            <div class="cross-2"></div>
-                        </div>
-                        <img src="img/photo.jpg" />
-                    </div>
-                    <div id="search-item">
-                        <i class="fas fa-search" aria-hidden="true"></i>
-                        <input id="search-box" type="text" name="search"
-                            placeholder="Search for Clothing and Accessories" />
-                    </div>
-    
-                    <a href="index.html">Home</a>
-                    <a href="#clothing-section">Clothing</a>
-                    <a href="#accessory-section">Accessories</a>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Nail Polish</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="admin.html" class="admin-log"> Admin Login</a></li>
+                    </ul>
                 </div>
+                </div>
+
             </div>
         </nav>
-        <div id="overlay"></div>
+        <!--<div id="overlay"></div>-->
     </header>
-    <!--<header class="menu">
 
-        <a href="homepage.html"> <img class="logo" src="/pictures/TripPlanLogo.png" alt="Trip Plan Logo"> </a>
-        
-        <nav class="nav-bar">
-        <a class="nav-bar-a" href="calculator.html"> Plan Your Trip </a>
-        <a class="nav-bar-a" href="homepage.html"> About Us </a>
-        <a class="nav-bar-a" href="homepage.html"> Travel Vlog </a>
-        </nav>
-        
-        </header>-->
-
+    <!-- Main Container with items-->
     <section class="flex-card-container">
 
         <article class="article-card">
