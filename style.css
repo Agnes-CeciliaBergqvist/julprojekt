@@ -18,6 +18,9 @@
   justify-content: center;
   align-items: center; }
 
+#file {
+  cursor: pointer; }
+
 .admin-headline {
   padding: 10rem;
   padding-bottom: 3rem; }
@@ -143,13 +146,13 @@
 a:hover, a:visited, a:link {
   color: #343a40; }
 
-.flex-card-container {
+.index-flex-card-cntr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row; }
 
-.article-card {
+.index-article-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -160,16 +163,23 @@ a:hover, a:visited, a:link {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px; }
 
-.card-img {
+.index-card-img {
   width: 50%;
   margin: auto; }
 
-.button-flex {
-  border: none;
+.index-btn-flex {
+  border: 5px, black;
   padding: 6px;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  color: white;
+  background-color: black; }
 
-h3 {
+.index-btn-flex:hover {
+  background-color: white;
+  color: black;
+  border: 2px, black; }
+
+.index-h3 {
   font-size: 13px; }
 
 #myBtn {

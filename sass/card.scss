@@ -1,11 +1,13 @@
-.flex-card-container { 
+
+//container for prdt cards
+.index-flex-card-cntr { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
     flex-direction: row;
     }
-
-.article-card { 
+//product cards
+.index-article-card { 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,17 +19,25 @@
     font-size: 13px;
     }
 
-.card-img {
+.index-card-img {
     width: 50%;
     margin: auto;
 }
-
-.button-flex {
-    border: none;
+//Design for "add to cart"//
+.index-btn-flex {
+    border: 5px, black;
     padding: 6px;
     margin-top: 1rem;
+    color: white;
+    background-color: black;
+}
+//change color when hoovering over btn//
+.index-btn-flex:hover { 
+    background-color: white;
+    color: black;
+    border: 2px, black; 
 }
 
-h3 {
+.index-h3 {
     font-size: 13px;
 }
