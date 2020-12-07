@@ -353,13 +353,13 @@
   #cart-wrapper > a {
     font-size: 10px; } }
 
-.flex-card-container {
+.index-flex-card-cntr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row; }
 
-.article-card {
+.index-article-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -370,16 +370,23 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px; }
 
-.card-img {
+.index-card-img {
   width: 50%;
   margin: auto; }
 
-.button-flex {
-  border: none;
+.index-btn-flex {
+  border: 5px, black;
   padding: 6px;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  color: white;
+  background-color: black; }
 
-h3 {
+.index-btn-flex:hover {
+  background-color: white;
+  color: black;
+  border: 2px, black; }
+
+.index-h3 {
   font-size: 13px; }
 
 /*first flexbox*/
