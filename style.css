@@ -382,6 +382,43 @@
 h3 {
   font-size: 13px; }
 
+/*first flexbox*/
+.cart-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #7e9162;
+  margin: 15px; }
+
+/*headlines for margin*/
+.cart-checkout, .cart-cart, .cart-border {
+  margin-bottom: 10px; }
+
+/*grey lines*/
+.cart-border {
+  border: 2px solid #D1D1D1; }
+
+/*the log for logotype on shoppingcart headline*/
+.cart-logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*the text NAIL CITY*/
+.cart-logo span {
+  font-weight: 800; }
+
+.cart-logo > a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  text-align: center; }
+
 #myBtn {
   color: coral;
   border: none; }
