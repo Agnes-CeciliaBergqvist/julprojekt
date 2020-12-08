@@ -1,19 +1,41 @@
-.flex-card-container { 
+.index-flex-card-cntr { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
     flex-direction: row;
-    
     }
-
-article { 
-    border: 2px solid gray;
+//product cards
+.index-article-card { 
     display: flex;
     flex-direction: column;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
     width: 10rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     }
-.card-p {
-    width: 10rem;
-}    
+
+.index-card-img {
+    width: 50%;
+    margin: auto;
+}
+//DEsign för "add to cart"
+.index-btn-flex {
+    border: 5px black; // inquire... was none
+    padding: 6px;
+    margin-top: 1rem;
+    /*color: white;
+    background-color: black*/
+}
+//change color when hoovering over btn//
+.index-btn-flex:hover { 
+    background-color: white;
+    color: black;
+    border: 2px, black; 
+}	
+
+index-h3 {
+    font-size: 13px;
+}
