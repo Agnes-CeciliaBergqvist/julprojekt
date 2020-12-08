@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+footer {
+    width: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.flex {
+    width: 33%;
+    margin: 2%;
+}
+
+.flex h2:after {
+   border-bottom: 2px solid #95a5a6;
+   content: "";
+   display: block;
+   width:30%;
+   padding-top: 10px;
+}
+
+.btn button {
+    width: 100%;
+    height: 6vh;
+    border: 0;
+    background-color:  rgb(198, 204, 209);
+}
+
+#msgForm {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: rgb(198, 204, 209);
+    padding-left: 10px;
+    border: 1px solid #bdbbbb;
+
+}
+
+.left-box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+
+.content {
+    margin: 20px 0 0 0;
+}
+
+.left-box .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left-box .content .social a {
+    padding: 0 2px;
+}
+
+.left-box .content .social a span {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+span {
+    color: #4c5861;
+}
+
+.center .content .fas {
+    font-size: 1.4375rem;
+    background: #999393;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background:  #aa53cc;
+}
+
+.center .content .text {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone {
+    margin: 15px 0;
+}
+
+.right {
+      margin-left: auto;
+}
+.right form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input, .right form .msgForm {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: rgb(198, 204, 209);
+    padding-left: 10px;
+    border: 1px solid #bdbbbb;
+}
+@media screen and (max-width: 960px){
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .center, .right {
+        display: none;
+    }
+    .flex .social {
+        width: 100%;
+        align-self: flex-start;
+
+    }
+}
+@media screen and (max-width: 768px){
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-box h2{
+        display: none;
+        }
+    .left-box .content p{
+       display: none;
+    }
+    .center, .right {
+        display: none;
+    }
+    .flex .social {
+        width: 100%;
+        align-self: flex-start;
+        
+    }
+}
+
+

@@ -1,7 +1,11 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+<<<<<<< HEAD
 
+=======
+    background-color: white;
+>>>>>>> bb7f59be1abdc86d2c6da960bf7633f46f8506ce
 }
 
 #topbar {

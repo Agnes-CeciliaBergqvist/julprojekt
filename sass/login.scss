@@ -1,5 +1,5 @@
 /*mother to login form*/
-.container{
+.login-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
 
 }
 /*daughter to container*/
-.main {
+.login-main {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -18,7 +18,7 @@
 
 }
 /*img og avatar*/
-.avatar {
+.login-avatar {
     width: 40%;
     border-radius: 50%;
     text-align: center;
@@ -26,19 +26,19 @@
     margin: 12px 0 12px 57px;
 }
 /*classes for label to input fields */
-.name, .password {
+.login-name, .login-password {
     display: flex;
     margin: 3.5px;
 }
 /*the whole form*/
-#form_id {
+#login-form_id {
     display: flex;
     flex-direction: column;
     text-align: center;
     
 }
 /*button for login*/
-#submit {
+#login-submit {
     margin: 0.2rem;
     background-color: #4CAF50;
     color: white; 
