@@ -10,22 +10,27 @@
 </head>
 
 <body>
+    <!--header with clickeble logo-->
     <header>
         <div class="cart-logo">
         <a href="/index.html"><span>Nail</span>CITY</a>
         </div>
+        <div class="cart-border"></div>
     </header>
 
+<!--the shopping cart flexbox with total price-->
     <main>
         <div class="cart-flexbox">
             <div>
-                <h1 class="cart-checkout">Checkout</h1>
-                <hr class="cart-border">
+                <h1 class="cart-checkout">CHECKOUT</h1>
+                <div id="cart-grey-lines" class="cart-border"></div>
             </div>
             <div>
-                <h4 class="cart-cart">Shopping cart</h4>
-                <hr class="cart-border">
+                <h4 class="cart-cart">SHOPPING CART</h4>
+                <div id="cart-grey-lines" class="cart-border"></div>
+                <P>Total price: </P>
             </div>  
+            <button id="cart-button" onclick="cartbutton">GO TO PAYMENT</button>
             
         </div>
     </main>
