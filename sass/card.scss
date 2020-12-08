@@ -1,4 +1,5 @@
 .index-flex-card-cntr { 
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
@@ -26,8 +27,8 @@
     border: 5px black; // inquire... was none
     padding: 6px;
     margin-top: 1rem;
-    /*color: white;
-    background-color: black*/
+    color: white;
+    background-color: black;
 }
 //change color when hoovering over btn//
 .index-btn-flex:hover { 
