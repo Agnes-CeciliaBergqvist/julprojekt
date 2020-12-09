@@ -67,10 +67,6 @@ function addPrd() {
 }
 
 
-
-
-
-
 /*
 // local storage js, loopa igenom - Rakib kommer gå igenom 
 
