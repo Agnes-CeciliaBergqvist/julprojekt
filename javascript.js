@@ -125,8 +125,10 @@ function updateName() {
 
 // AP : function to remove certain items from var names.push()
 function deleteItems() {
+    var removeList = document.querySelector("div");   // chooses element to delete
+    removeList.removeChild(removeList.lastChild);     //removes last item in array 
 
-    names.removeChild(selected_name_wrapper);
+//    names.removeChild(selected_name_wrapper);
 
 }
 
