@@ -15,16 +15,16 @@
     }
   }*/
 
-  //Load more products button
+//Load more products button
 
-  /*function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }*/
+/*function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}*/
 
 
 
@@ -39,8 +39,8 @@ function addPrd() {
 
   var headline = document.querySelector("#headline").value; // Headline
   var prdName = document.querySelector("#prd-desp").value; // Product Description
-  var prdPrice = document.querySelector("#price").value*1; // Product Price
-  
+  var prdPrice = document.querySelector("#price").value * 1; // Product Price
+
   // declares and appends set image to news products list on admin.html
   var prdImage = document.createElement("img"); // declares and creates img element
 
@@ -58,11 +58,11 @@ function addPrd() {
   var li = document.createElement("li"); // declares and creates li element
   li.innerText = headline + " " + prdName + " " + prdPrice; // chooses what data to put into li element 
   console.log(li)
-  
+
   var ul = document.querySelector(".admin-prd-list"); // declares and choose pre-existing element from html  
   ul.appendChild(li); // appends JS-created li element to ul element in html
 
- 
+
 
 }
 
@@ -86,19 +86,3 @@ function publishPrd() {
 
 }
 */
-
-//function for adding product to shopping cart 
-var addToCartButtons = document.getElementsByClassName('index-btn-flex')
-for (var i = 0; i < addToCartButtons.length; i++){
-  var button = addToCartButtons[i]
-  button.addEventListener('click', addToCartClicked)
-
-}
-//function for clicking on the button 
-function addToCartClicked(event) {
-  var button = event.target
-  var card = button.parentElement.parentElement //id name and parent to product card
-  var h3 = card.getElementByIdName('index-h3')[0].innerText //Title and the first product
-  console.log(h3)
-  
-}
