@@ -13,59 +13,42 @@
 
 <body id="admin-body">
 
-    <!-- Input fields with headline, image, product description, price -->
-
-    <div id="admin-form">
-
-        <h2 class="admin-headline"> Admin - lägg till ny produkt </h2>
-        <form>
-
-            <input type="file" name="image" id="admin-prdImg" >
-
-            <input type="text" id="headline" placeholder="Add headline">
-
-            <input type="text" id="prd-desp" placeholder="Add description">
-            
-            <input type="number" id="price" placeholder="Add price">
-
-        </form>
-    </div>
-
-    <div id="admin-btns-flex">
-
-        <!-- button, add button -->
-        <button onclick="addPrd()" class="admin-add-btn"> Add </button>
-
-        <!-- edit button -->
-        <button class="admin-edit-btn"> Edit </button>
-
-        <!-- Publish button-->
-        <button onclick="publishPrd()" class="admin-publish-btn"> Publish </button>
-
-
-    </div>
+    <br><br>
+    <!-- Original code -->
+    Headline: <input type="text" id="name-input"><br><br>
+    Description: <input type="text" id="decsrip-input"><br><br>
+    Price: <input type="number" id="price-input"><br><br>
 
 
 
-    <!-- New products, later to be editable-->
-    <div id="admin-new-prd">
-        <h3 class="admin-prd-list-h3"> Här kommer nya produkter</h3>
-
-        <div class="admin-flex-items">
-
-            <!-- <div id="admin-prd-img">
-                <!-- InnerHTML "li" -->
-            </div> -->
-
-            <ul class="admin-prd-list">
-                <!-- InnerHTML "li" -->
-            </ul>
-        </div>
-
-    </div>
+    <button id="add-name" class="button">Add Name</button>
 
 
+    <br><br>
+    <div id="list">List of Names</div>
 
+    <br>
+    <br>
+    <br>
+
+    <div id="admin-chosen-name"> Product(s) to edit and/or delete </div>
+    <br>
+
+    <button id="edit" class="button">Edit</button>
+    <!--Delete button-->
+    <button id="admin-delete-btn" class="button">Delete</button>
+    <br><br>
+
+    <input type="text" id="prd-to-edit">
+    <button id="update" class="button">Update</button>
+
+    <br>
+    <br>
+    <!-- Lista på updatedName-->
+    <div id="admin-updated-list"> </div>
+
+    <!-- When btn is clicked updated list is published if edited-->
+    <button id="admin-publish" class="button"> Publish</button>
 
 
 

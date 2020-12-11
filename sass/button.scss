@@ -4,3 +4,19 @@
     color: coral;
     border: none;
 }
+
+
+//Design for "add to cart"//
+.index-btn-flex, .button {
+    border: 5px, black;
+    padding: 6px;
+    margin-top: 1rem;
+    color: white;
+    background-color: black;
+}
+//change color when hoovering over btn//
+.index-btn-flex:hover, .button:hover { 
+    background-color: white;
+    color: black;
+    border: 2px, black; 
+}
