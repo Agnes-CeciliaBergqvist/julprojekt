@@ -1,73 +1,16 @@
-#admin-body {
+#admin-main {
     background-color: rgb(255, 255, 255);
     color: rgb(71, 71, 71);
     padding-left: 20px;
+    padding-top: 5rem;
 }
 
 /* ALL KOD NEDAN SKA UPPDATERAS AV AP */ 
 /* Input fields*/
 
-#admin-form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 
-.admin-headline {
-    padding: 10rem;
-    padding-bottom: 3rem;
-}
 
-/* Buttons below input field*/ 
-
-#admin-btns-flex {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-
-.admin-add-btn, .admin-edit-btn, .admin-publish-btn {
-    margin-top: 2rem;
-    padding: 0.5rem; 
-    border-radius: 0.5rem 0.5rem; 
-    background-color: darkgrey; 
-}
-
-/* New products to be added, edited and published in webshop */
-
-#admin-new-prd {
-    background-color: rgb(204, 204, 204); 
-    height: auto;
-    padding: 2rem;
-    background-color: rgb(71, 167, 7); 
-    padding: 2rem;
-    border: black;
-    border-style: solid;
-    border-width: 2px;
-
-}
-
-
-.admin-flex-items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.admin-prd-list {
-    list-style-type: none;
-}
-
-.admin-prd-list >li {
-    padding: 1rem;
-}
 
 /* Används när bildens appends till ul ".admin-prd-list*/
 .admin-prd-list >img {
