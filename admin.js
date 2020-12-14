@@ -10,18 +10,45 @@ var selected_name_index = null;
 
 function addProduct() {
 
+    
     // values from input fields 
     var adminHeadline = document.querySelector("#admin-headline-input").value;
     var adminDescription = document.querySelector("#admin-decsrip-input").value;
     var adminPrice = document.querySelector("#admin-price-input").value;
+
+    var adminPrdImage = document.createElement("img"); // declares and creates img element
+    adminPrdImage.src = "images/opi04.webp"; // sets image source
 
     // values pushed into list var adminNewPrdsList (mutable)
     if (adminHeadline + adminDescription + adminPrice) {
         adminNewPrdsList.push(adminHeadline + " " + adminDescription + " " + adminPrice);
         updateHTML();
     }
+
     // fixa till objekt istället likt i local storage här enligt R? 
+    let product = {}
+
+    const divData = document.querySelector(".test").innerText;
+
+    localStorage.setItem("DivData" , divData)
+
+    product.adminHeadline = name; 
+    product.adminDescription = tag; 
+    product.adminPrice = price: 
+ // product.inCart: // behövs på adminsidan?
+    product.adminPrdImage = url; 
+
     // lagra i local storage 
+    adminNewPrdsList.push(product)
+
+    const localData = localStorage.getItem("productList"); 
+
+    const existingData = JSON.parse(localData);
+
+    const cleanedData = existingData ?  existingData.concat(adminNewPrdsList) : adminNewPrdsList;
+
+    localStorage.setItem("productList", JSON.stringify(cleanedData));
+    
 
     console.log(adminNewPrdsList)
 }
