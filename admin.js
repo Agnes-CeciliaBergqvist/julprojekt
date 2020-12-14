@@ -9,9 +9,8 @@ var selected_name_wrapper = null;
 var selected_name_index = null;
 
 function addProduct() {
+
     // values from input fields 
-
-
     var adminHeadline = document.querySelector("#admin-headline-input").value;
     var adminDescription = document.querySelector("#admin-decsrip-input").value;
     var adminPrice = document.querySelector("#admin-price-input").value;
@@ -21,7 +20,7 @@ function addProduct() {
         adminNewPrdsList.push(adminHeadline + " " + adminDescription + " " + adminPrice);
         updateHTML();
     }
-    // fixa till objekt istället likt i local storage
+    // fixa till objekt istället likt i local storage här enligt R? 
     // lagra i local storage 
 
     console.log(adminNewPrdsList)
@@ -109,9 +108,6 @@ function deleteItems() {
     var removeList = document.querySelector("#admin-list");   // chooses element to delete
     removeList.removeChild(removeList.lastChild);     //removes last item in array 
 
-    // remove selected item in list; not functioning
-    //adminNewPrdsList.removeChild(selected_name_wrapper);
-
 }
 
 
@@ -125,55 +121,8 @@ document.getElementById("admin-update").addEventListener("click", updateName)
 
 
 
-function addToLocalStorage() {
-    let product = {}
-    const name = document.querySelector("#input1").value;
-    const price = document.querySelector("#input2").value;
-
-    // const divData = document.querySelector(".test").innerText;
-
-    // localStorage.setItem("DivData" , divData)
-
-    // input1 och input2 ska lagras i ett objekt
-    //Validera om användare har matat in empty value
-    product.name = name;
-    product.price = price;
-    //console.log(product) // {name :" ", price:" "}
-    //objektet ska pushas i item array 
-
-    item.push(product);
-    // console.log("item array ", item)
-    //item array ska lagras i localstorage 
-
-    // vi behöver skriva lite logik som gör att setItem kan också
-    //lagra nya value /append nya value
-    //när det finns data in i localstorage ska vi lägga till data  
 
 
-    // vi skulle spara data i localStorage 
-
-
-
-    // om det redan finns produkter i localstorage skulle vi lägga till item 
-    // i localstorage.
-
-
-    //localstorage har befietligt value
-    const localData = localStorage.getItem("productList");
-    //konverterade vi till js objekt 
-    const existingData = JSON.parse(localData);
-
-    // hur vi kan adda två array 
-    // const cleanedData = existingData +item   eller   item
-
-    const cleanedData = existingData ? existingData.concat(item) : item;
-
-    //cleanedData ska sparas i localstorage
-    localStorage.setItem("productList", JSON.stringify(cleanedData));
-
-    console.log(localData)
-    console.log(addToLocalStorage)
-}
 
 
 

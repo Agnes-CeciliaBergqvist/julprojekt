@@ -36,6 +36,7 @@ for (var i = 0; i < addToCartButtons.length; i++){
   button.addEventListener('click', addToCartClicked)
 
 }
+
 //function for clicking on the button 
 function addToCartClicked(event) {
   var button = event.target
