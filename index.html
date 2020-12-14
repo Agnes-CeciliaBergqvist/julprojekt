@@ -15,11 +15,16 @@
 <link href="footer.css" rel="stylesheet" type="text/css"/>
 
 <!-- Javascript-->
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			  crossorigin="anonymous"></script>
+
 <script src="javascript.js" defer></script>
 <script src="index.js" defer></script>
-
+<script src="loadproducts.js" defer></script>
 
 </head>
+
 
 <body>
     <header>
@@ -70,6 +75,8 @@
         </nav>
         <!--<div id="overlay"></div>-->
     </header>
+
+    
 
     <section class="index-flex-card-cntr">
 
@@ -315,6 +322,21 @@
             <button class="index-btn-flex">Add To Cart</button>
             
         </article>
+  
+     
+    </section>
+     
+    
+    <!--Load more products button-->
+    <div class="index-loadMoreBtn-con">
+    <button class="index-loadMoreBtn">Load Products</button> 
+    </div>  
+
+
+
+
+
+
         <!--
             /***FOOTER STARTS HERE**/
                     <div class="left-box flex">
@@ -383,16 +405,6 @@
 
 
 
-        <!--<button onclick="myFunction()">Click Me</button>
-        <div id="myDIV"></div>-->
-
-        <a href="#" id="loadMore">Load More</a>
-        <!-- load more products button
-        <a href="#" id="loadMore">Load More</a>
-            <p class="totop"> 
-            <a href="#top">Back to top</a> 
-        </p>   
-        -->
 
 
             
@@ -405,10 +417,7 @@
                     </ul> -->
         
         
-            </div>
-        
-     
-    </section>
+            
     
 
 </body>
