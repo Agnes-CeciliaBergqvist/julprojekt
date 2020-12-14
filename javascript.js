@@ -15,16 +15,16 @@
     }
   }*/
 
-  //Load more products button
+//Load more products button
 
-  /*function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }*/
+/*function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}*/
 
 
 
@@ -72,7 +72,12 @@ function updateHTML() {
         list.appendChild(wrapper)
     }
 
-}
+  var headline = document.querySelector("#headline").value; // Headline
+  var prdName = document.querySelector("#prd-desp").value; // Product Description
+  var prdPrice = document.querySelector("#price").value * 1; // Product Price
+
+  // declares and appends set image to news products list on admin.html
+  var prdImage = document.createElement("img"); // declares and creates img element
 
 // When clicking on desired product in list
 function updateSelectedName() {
@@ -99,6 +104,15 @@ function editName() {
         console.log("start editing name")
     }
 }
+
+  // appends data list (new products) on admin.html 
+  var li = document.createElement("li"); // declares and creates li element
+  li.innerText = headline + " " + prdName + " " + prdPrice; // chooses what data to put into li element 
+  console.log(li)
+
+  var ul = document.querySelector(".admin-prd-list"); // declares and choose pre-existing element from html  
+  ul.appendChild(li); // appends JS-created li element to ul element in html
+
 
 function updateName() {
     var new_name = document.getElementById("prd-to-edit").value
@@ -138,6 +152,8 @@ document.getElementById("update").addEventListener("click", updateName)
 
 
 
+
+}
 
 
 // use local storage and global array var names to push to index.html
