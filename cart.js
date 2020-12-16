@@ -2,176 +2,176 @@
 let carts = document.querySelectorAll('.index-btn-flex');
 //variabel products
 let products = [
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '61 Russian Roulette',
-    price: 149,
-    inCart: 0,
-    url: "images/essie01.webp"
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '61 Russian Roulette',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/essie01.webp"
 
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '61 Russian Roulette',
-    price: 149,
-    inCart: 0,
-    url: "images/essie02.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '61 Russian Roulette',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/essie02.webp"
 
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '017 Black Is Back',
-    price: 149,
-    inCart: 0,
-    url: "images/essie03.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '42 Lady Like',
-    price: 149,
-    inCart: 0,
-    url: "images/essie04.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '43 Angora Cardi',
-    price: 149,
-    inCart: 0,
-    url: "images/essie05.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '02 Green Shadow',
-    price: 149,
-    inCart: 0,
-    url: "images/essie06.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: 'In The Time Zone',
-    price: 149,
-    inCart: 0,
-    url: "images/express01.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: 'Binge-Worthy',
-    price: 149,
-    inCart: 0,
-    url: "images/express02.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: 'Scoot Scoot',
-    price: 149,
-    inCart: 0,
-    url: "images/express03.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: 'Get A Mauve On',
-    price: 149,
-    inCart: 0,
-    url: "images/express04.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: 'Now Or Never',
-    price: 149,
-    inCart: 0,
-    url: "images/express05.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: 'Dont Hate, Curate',
-    price: 149,
-    inCart: 0,
-    url: "images/express06.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '06 Seen In Aber',
-    price: 149,
-    inCart: 0,
-    url: "images/opi01.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '013 Loch-smith',
-    price: 149,
-    inCart: 0,
-    url: "images/opi02.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '05 Gone Plaid',
-    price: 149,
-    inCart: 0,
-    url: "images/opi03.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '03 Edinburgh-er',
-    price: 149,
-    inCart: 0,
-    url: "images/opi04.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '019 That Glas-glow',
-    price: 149,
-    inCart: 0,
-    url: "images/opi05.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '09 Nice set of Pipes',
-    price: 149,
-    inCart: 0,
-    url: "images/opi06.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '015 Im a Natural',
-    price: 149,
-    inCart: 0,
-    url: "images/opi07.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '017 Love or Lust-er?',
-    price: 149,
-    inCart: 0,
-    url: "images/opi08.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '04 Glisten Carefully!',
-    price: 149,
-    inCart: 0,
-    url: "images/opi09.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '08 Baroque Pearls',
-    price: 149,
-    inCart: 0,
-    url: "images/opi10.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '013 Olive for Pearls',
-    price: 149,
-    inCart: 0,
-    url: "images/opi11.webp"
-  },
-  {
-    name: 'Essie Nail Lacquer',
-    tag: '01 Full of Abalone',
-    price: 149,
-    inCart: 0,
-    url: "images/opi12.webp"
-  },
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '017 Black Is Back',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/essie03.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '42 Lady Like',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/essie04.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '43 Angora Cardi',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/essie05.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '02 Green Shadow',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/essie06.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: 'In The Time Zone',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/express01.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: 'Binge-Worthy',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/express02.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: 'Scoot Scoot',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/express03.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: 'Get A Mauve On',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/express04.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: 'Now Or Never',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/express05.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: 'Dont Hate, Curate',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/express06.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '06 Seen In Aber',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi01.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '013 Loch-smith',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi02.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '05 Gone Plaid',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi03.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '03 Edinburgh-er',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi04.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '019 That Glas-glow',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi05.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '09 Nice set of Pipes',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi06.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '015 Im a Natural',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi07.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '017 Love or Lust-er?',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi08.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '04 Glisten Carefully!',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi09.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '08 Baroque Pearls',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi10.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '013 Olive for Pearls',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi11.webp"
+  // },
+  // {
+  //   name: 'Essie Nail Lacquer',
+  //   tag: '01 Full of Abalone',
+  //   price: 149,
+  //   inCart: 0,
+  //   url: "images/opi12.webp"
+  // },
 ]
 
 for (let i=0; i < carts.length; i++) {
@@ -253,7 +253,7 @@ function displayCart() {
 
   let productContainer = document.querySelector(".products");
   let cartCost = localStorage.getItem('totalCost');
-  console.log(cartItems);
+  //console.log(cartItems);
   if (cartItems && productContainer) {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {

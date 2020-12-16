@@ -2,14 +2,186 @@
 
 // global variable storing the list of names
 // this can be used for local storage and to be used for published new prds
-var adminNewPrdsList = [];
+// var adminNewPrdsList = [];
+let products = [
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '61 Russian Roulette',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/essie01.webp"
+  
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '61 Russian Roulette',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/essie02.webp"
+  
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '017 Black Is Back',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/essie03.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '42 Lady Like',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/essie04.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '43 Angora Cardi',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/essie05.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '02 Green Shadow',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/essie06.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: 'In The Time Zone',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/express01.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: 'Binge-Worthy',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/express02.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: 'Scoot Scoot',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/express03.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: 'Get A Mauve On',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/express04.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: 'Now Or Never',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/express05.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: 'Dont Hate, Curate',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/express06.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '06 Seen In Aber',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi01.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '013 Loch-smith',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi02.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '05 Gone Plaid',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi03.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '03 Edinburgh-er',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi04.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '019 That Glas-glow',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi05.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '09 Nice set of Pipes',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi06.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '015 Im a Natural',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi07.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '017 Love or Lust-er?',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi08.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '04 Glisten Carefully!',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi09.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '08 Baroque Pearls',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi10.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '013 Olive for Pearls',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi11.webp"
+    // },
+    // {
+    //   name: 'Essie Nail Lacquer',
+    //   tag: '01 Full of Abalone',
+    //   price: 149,
+    //   inCart: 0,
+    //   url: "images/opi12.webp"
+    // },
+  ]
 
 // keep track of which item is selected
 var selected_name_wrapper = null;
 var selected_name_index = null;
 
 function addProduct() {
-
+console.log("hej");
     
     // values from input fields 
     var adminHeadline = document.querySelector("#admin-headline-input").value;
@@ -20,10 +192,10 @@ function addProduct() {
     adminPrdImage.src = "images/opi04.webp"; // sets image source
 
     // values pushed into list var adminNewPrdsList (mutable)
-    if (adminHeadline + adminDescription + adminPrice) {
-        adminNewPrdsList.push(adminHeadline + " " + adminDescription + " " + adminPrice);
-        updateHTML();
-    }
+    // if (adminHeadline + adminDescription + adminPrice) {
+    //     adminNewPrdsList.push(adminHeadline + " " + adminDescription + " " + adminPrice);
+    //     updateHTML();
+    // }
 
     // fixa till objekt istället likt i local storage här enligt R? 
     let product = {}
@@ -32,26 +204,43 @@ function addProduct() {
 
     localStorage.setItem("DivData" , divData)
 
-    product.adminHeadline = name; 
-    product.adminDescription = tag; 
-    product.adminPrice = price: 
+    product.name = adminHeadline; 
+    product.tag = adminDescription; 
+    product.price = adminPrice; 
  // product.inCart: // behövs på adminsidan?
-    product.adminPrdImage = url; 
+    product.url = adminPrdImage; 
 
     // lagra i local storage 
-    adminNewPrdsList.push(product)
+   products.push(product)
 
     const localData = localStorage.getItem("productList"); 
 
     const existingData = JSON.parse(localData);
+    console.log(existingData)
 
-    const cleanedData = existingData ?  existingData.concat(adminNewPrdsList) : adminNewPrdsList;
+
+  var cleanedData 
+if (existingData) {
+   cleanedData = existingData.concat(products)
+  
+
+}else {
+  cleanedData = products
+
+}
+
+    //const cleanedData = existingData ?  existingData.concat(products) : products;
+    console.log(cleanedData)
 
     localStorage.setItem("productList", JSON.stringify(cleanedData));
     
 
-    console.log(adminNewPrdsList)
+    
 }
+console.log(products)
+
+
+
 
 
 
@@ -138,10 +327,10 @@ function deleteItems() {
 }
 
 
-document.getElementById("admin-delete-btn").addEventListener("click", deleteItems)
+//document.getElementById("admin-delete-btn").addEventListener("click", deleteItems)
 document.getElementById("admin-add-name").addEventListener("click", addProduct)
-document.getElementById("admin-edit").addEventListener("click", editName)
-document.getElementById("admin-update").addEventListener("click", updateName)
+//document.getElementById("admin-edit").addEventListener("click", editName)
+// document.getElementById("admin-update").addEventListener("click", updateName)
 
 
 
