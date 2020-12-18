@@ -1,228 +1,82 @@
 //function for adding product to shopping cart when clicking on add to cart
 let carts = document.querySelectorAll('.index-btn-flex');
 //variabel products
-let products = [
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '61 Russian Roulette',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/essie01.webp"
-
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '61 Russian Roulette',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/essie02.webp"
-
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '017 Black Is Back',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/essie03.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '42 Lady Like',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/essie04.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '43 Angora Cardi',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/essie05.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '02 Green Shadow',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/essie06.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: 'In The Time Zone',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/express01.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: 'Binge-Worthy',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/express02.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: 'Scoot Scoot',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/express03.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: 'Get A Mauve On',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/express04.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: 'Now Or Never',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/express05.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: 'Dont Hate, Curate',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/express06.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '06 Seen In Aber',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi01.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '013 Loch-smith',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi02.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '05 Gone Plaid',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi03.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '03 Edinburgh-er',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi04.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '019 That Glas-glow',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi05.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '09 Nice set of Pipes',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi06.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '015 Im a Natural',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi07.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '017 Love or Lust-er?',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi08.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '04 Glisten Carefully!',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi09.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '08 Baroque Pearls',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi10.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '013 Olive for Pearls',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi11.webp"
-  // },
-  // {
-  //   name: 'Essie Nail Lacquer',
-  //   tag: '01 Full of Abalone',
-  //   price: 149,
-  //   inCart: 0,
-  //   url: "images/opi12.webp"
-  // },
-]
+//denna array kommer att läga till de produkterna som användare väljer
+let addedProductCards = []
+//byt ut denna arrayen mot den övre
+//let products = []
 
 for (let i=0; i < carts.length; i++) {
+  //denna ska läsa data från localstorgge som sparat cartItems 
+  console.log("cartItems")
+  const productList = localStorage.getItem("productList")//läser data direkt från localstorage 
+  const products = JSON.parse(productList)
   carts[i].addEventListener('click', ()=> {
+    //läsa specifikt valda produkter 
     cartNumbers(products[i]);
+    console.log("cartItems, lop")
     totalCost(products[i]);
+    
     })
 }
 //function for saving cart when updating page
+//med cartNumber man ska via längden av retunerad localstorage array 
 function cartNumbers(product){
-  let productNumbers = localStorage.getItem('cartNumbers');
-   //converting a string into a number 
-  productNumbers = parseInt(productNumbers);
-  
- if(productNumbers){
-  localStorage.setItem('cartNumbers', productNumbers + 1);
-  document.querySelector('#cart-wrapper span').textContent = productNumbers + 1;
- } else {
-  localStorage.setItem('cartNumbers', 1);
-  document.querySelector('#cart-wrapper span').textContent = 1;
- }
+
  setItems(product);
 }
 
 //function to see which item is being clicked to cart
-function setItems(product) {
+function setItems(products) {
   let cartItems = localStorage.getItem('productsInCart');
-  cartItems = JSON.parse(cartItems);
+  //cartItems = JSON.parse(cartItems);
+  const existingData = JSON.parse(cartItems);
+  //här ska vi göra existing data/rensa datan om det finns ska vi göra concat 
+  //LÄGG DET UNDER HÄR, KÖR SAMMA CONCAT SOM VI HAR UNDER ADMIN 
+  addedProductCards.push(products)
+   
 
-
-  if (cartItems != null) {
-
-    if (cartItems[product.tag] == undefined) {
-      cartItems = {
-        ...cartItems,
-        [product.tag]: product
-
-      }
-    }
-
-    cartItems[product.tag].inCart += 1;
-
-  } else {
-    product.inCart = 1;
-    cartItems = {
-      [product.tag]: product
-
-    }
+  var cleanedData 
+  if (existingData) {
+     cleanedData = existingData.concat(addedProductCards)
+    
+  
+  }else {
+    cleanedData = addedProductCards
+  
   }
-  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-}
+ 
+      
+      console.log(cleanedData)
+  
+      localStorage.setItem("productsInCart", JSON.stringify(cleanedData));
+   location.reload()
+  }
+  
+  
+
+  // if (cartItems != null) {
+
+  //   if (cartItems[product.tag] == undefined) {
+  //     cartItems = {
+  //       ...cartItems,
+  //       [product.tag]: product
+
+  //     }
+  //   }
+
+  //   cartItems[product.tag].inCart += 1;
+
+  // } else {
+  //   product.inCart = 1;
+  //   cartItems = {
+  //     [product.tag]: product
+
+  //   }
+  // }
+  //products.push(cartItems)
+ // localStorage.setItem("productsInCart", JSON.stringify(product));
+//}
 
 //function for loading the page and cart is still there
 function LoadCartNumbers() {
@@ -234,17 +88,19 @@ function LoadCartNumbers() {
   }
 }
 
-
+//FIXA DENNA MED 
 // function for adding the price and see the total 
 function totalCost(product) {
   let cartCost = localStorage.getItem('totalCost');
+  console.log(cartCost)
   if (cartCost != null) {
     cartCost = parseInt(cartCost);
-    localStorage.setItem("totalCost", cartCost + product.price);
+    localStorage.setItem("totalCost",  Number(cartCost) + Number(product.price));
   } else {
     localStorage.setItem("totalCost", product.price);
   }
 }
+//vi ska läsa dessa från productsInCart FIXA DET
 //function for seeing product card in shoppingcart
 //this function should run as soon as we reload the page
 function displayCart() {
@@ -256,21 +112,21 @@ function displayCart() {
   //console.log(cartItems);
   if (cartItems && productContainer) {
     productContainer.innerHTML = '';
-    Object.values(cartItems).map(item => {
+   cartItems.map(item => {
       productContainer.innerHTML += `
       <div class="products">
        <i class="far fa-trash-alt"></i>
-                <img src="${item.url}"/>
+                <img src="${item.url}"/> 
                 <span>${item.name}</span>
             </div>
             <div class="price">${item.price} SEK</div>    
             <div class="quantity">
             <i class="fas fa-arrow-circle-left"></i>
-            <span>${item.inCart}</span>
+            <span>${item.inCart}</span> 
             <i class="fas fa-arrow-alt-circle-right"></i>
             </div>
             <div class="total">
-            ${item.inCart * item.price},00
+            ${item.inCart * item.price},00 
             </div>
             `;
     });

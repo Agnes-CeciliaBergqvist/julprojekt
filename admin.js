@@ -175,13 +175,17 @@ let products = [
     //   url: "images/opi12.webp"
     // },
   ]
+  
+
+
+
 
 // keep track of which item is selected
 var selected_name_wrapper = null;
 var selected_name_index = null;
 
 function addProduct() {
-console.log("hej");
+
     
     // values from input fields 
     var adminHeadline = document.querySelector("#admin-headline-input").value;
@@ -197,12 +201,30 @@ console.log("hej");
     //     updateHTML();
     // }
 
+
+
+       
+
+
     // fixa till objekt istället likt i local storage här enligt R? 
     let product = {}
 
     const divData = document.querySelector(".test").innerText;
 
-    localStorage.setItem("DivData" , divData)
+
+//kod från jonathan böjar här 
+    //  //retunerar en array utan dubletter
+    //  var uniqueArrayValues = (products) => {
+    //   var uniqueValues = [...new Set(products)]
+    //   return uniqueValues
+    // }
+    
+    // var uniqueArray = uniqueArrayValues(products)
+    // console.log(uniqueArray)
+//slutar här 
+   
+
+   // localStorage.setItem("DivData" , divData)
 
     product.name = adminHeadline; 
     product.tag = adminDescription; 
@@ -213,10 +235,12 @@ console.log("hej");
     // lagra i local storage 
    products.push(product)
 
+
     const localData = localStorage.getItem("productList"); 
 
     const existingData = JSON.parse(localData);
     console.log(existingData)
+
 
 
   var cleanedData 
@@ -233,11 +257,11 @@ if (existingData) {
     console.log(cleanedData)
 
     localStorage.setItem("productList", JSON.stringify(cleanedData));
-    
-
+    //laddar om sidan så den inte fastnar på samma ställe
+   location.reload()
     
 }
-console.log(products)
+
 
 
 
