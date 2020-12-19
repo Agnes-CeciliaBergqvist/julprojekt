@@ -1,85 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping cart-Checkout</title>
-        <!-- Fontawesome-->
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <!--CSS-->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping cart-Checkout</title>
+  <!-- Fontawesome-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <!-- Javascript-->
-    <script src="cart.js" defer></script>
-   
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
 
-  </head>
+  <!-- Javascript-->
+  <script src="cart.js" defer></script>
+
 
 </head>
 
 <body>
-    <!--header with clickeble logo-->
-    <header>
-  
-      <div class="cart-logo">
-        <a href="/index.html"><span>Nail</span>CITY</a>
 
-        <div id="navbar-right-items">
-          <i class="fas fa-user fa-lg"></i>
-          <a href="login.html" class="admin-log"> Admin Login</a>
-          
-          
-          <div id="cart-wrapper">
-              <!--<p id="cart-count"></p>-->
-              <!-- shopping cart has to be redirected to corresponding html file-->
-              <a href="#" ><i class="fas fa-shopping-cart"></i>Cart<span>0</span></a>
-              
-          </div>
-        </div>
-        </div>
-       
+  <header id="header">
 
-       
-        <div class="cart-border"></div>
+    <!-- Logo -->
+    <div id="header-logo">
+      <a href="index.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
+    </div>
 
-    </header>
+    <!-- Menu options -->
+    <div id="nav-bar">
+      <a class="nav-bar-a" href="index.html"> Products </a>
+      <a class="nav-bar-a" href="index.html"> Brands </a>
+      <a class="nav-bar-a" href="login.html"> Contact Us (login) </a>
+      <a class="nav-bar-a" href="admin.html"> Admin </a>
+    </div>
 
-<!--the shopping cart flexbox with total price-->
-   
+    <!-- Cart -->
+    <div id="cart-wrapper">
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span>0</span></a>
+    </div>
 
-      <div class="products-container">
-        <div class="product-header">
-          <h5 class="product-title">PRODUCT</h5>
-          <h5 class="price">PRICE</h5>
-          <h5 class="quantity">QUANTITY</h5>
-          <h5 class="total">TOTAL</h5>
-        </div>
-        <div class="products">
+  </header>
 
-        </div>
-      </div>
 
-      <input id="checkout" type="button" onclick="clickAlert()" value="CHECKOUT">
-      
 
-    
-      <!-- 
-        <div class="cart-flexbox">
-            <div>
-                <h1 class="cart-checkout">CHECKOUT</h1>
-                <div id="cart-grey-lines" class="cart-border"></div>
-            </div>
-            <div>
-                <h4 class="cart-cart">CART</h4>
-                <div id="cart-grey-lines" class="cart-border"></div>
-                <P>Total price: </P>
-            </div>  
-            <button id="cart-button" onclick="click">PURCHASE</button>
-            
-        </div>
-      </div> -->
-      
-     
-  </body>
+
+  </header>
+
+
+  <!--the shopping cart flexbox with total price-->
+  <div class="products-container">
+    <div class="product-header">
+      <h5 class="product-title">PRODUCT</h5>
+      <h5 class="price">PRICE</h5>
+      <h5 class="quantity">QUANTITY</h5>
+      <h5 class="total">TOTAL</h5>
+    </div>
+    <div class="products">
+
+    </div>
+  </div>
+
+  <input id="checkout" type="button" onclick="clickAlert()" value="CHECKOUT">
+
+
+</body>
+
 </html>

@@ -7,6 +7,7 @@
     justify-content: space-around; 
     flex-direction: row;
     }
+    
 //product cards
 .index-article-card { 
     display: flex;
@@ -15,9 +16,11 @@
     align-items: center;
     width: 10rem;
     margin-bottom: 1rem;
+    margin-left: 1rem; // added for test by AP
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+    border-style: solid; // added for test by AP
     }
 
 .index-card-img {
@@ -34,6 +37,7 @@
     color: white;
     background-color: black;
 }
+
 //change color when hoovering over btn//
 .index-btn-flex:hover { 
     background-color: white;
