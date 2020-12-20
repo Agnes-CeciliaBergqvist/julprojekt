@@ -6,50 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="javascript.js" defer></script>
+    <script src="admin.js" defer></script>
 
     <title>Admin</title>
 </head>
 
-<body id="admin-body">
+<body>
 
-    <br><br>
-    <!-- Original code -->
-    Headline: <input type="text" id="name-input"><br><br>
-    Description: <input type="text" id="decsrip-input"><br><br>
-    Price: <input type="number" id="price-input"><br><br>
+    <header id="header">
+
+        <!-- Logo -->
+        <div id="header-logo">
+            <a href="index.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
+        </div>
+
+        <!-- Menu options -->
+        <div id="nav-bar">
+            <a class="nav-bar-a" href="index.html"> Products </a>
+            <a class="nav-bar-a" href="index.html"> Brands </a>
+            <a class="nav-bar-a" href="login.html"> Contact Us (login) </a>
+            <a class="nav-bar-a" href="admin.html"> Admin </a>
+        </div>
+
+        <!-- Cart -->
+        <div id="cart-wrapper">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span>0</span></a>
+        </div>
+
+    </header>
 
 
 
-    <button id="add-name" class="button">Add Name</button>
+    <main id="admin-main">
+        Headline: <input type="text" id="admin-headline-input"><br><br>
+        Description: <input type="text" id="admin-decsrip-input"><br><br>
+        Price: <input type="number" id="admin-price-input"><br><br>
 
 
-    <br><br>
-    <div id="list">List of Names</div>
 
-    <br>
-    <br>
-    <br>
+        <button id="admin-add-name" class="button">Add Product</button>
 
-    <div id="admin-chosen-name"> Product(s) to edit and/or delete </div>
-    <br>
 
-    <button id="edit" class="button">Edit</button>
-    <!--Delete button-->
-    <button id="admin-delete-btn" class="button">Delete</button>
-    <br><br>
 
-    <input type="text" id="prd-to-edit">
-    <button id="update" class="button">Update</button>
 
-    <br>
-    <br>
-    <!-- Lista på updatedName-->
-    <div id="admin-updated-list"> </div>
 
-    <!-- When btn is clicked updated list is published if edited-->
-    <button id="admin-publish" class="button"> Publish</button>
+        <!-- <h3> List of Products </h3>
+        <div id="admin-list"></div>
 
+
+
+        <div id="admin-chosen-name"> Product(s) to edit and/or delete </div>
+
+
+        <button id="admin-edit" class="button">Edit</button>
+         Delete button
+        <button id="admin-delete-btn" class="button">Delete</button>
+
+
+        <input type="text" id="admin-prd-to-edit">
+        <button id="admin-update" class="button">Update</button>
+        <div id="admin-update-text"> </div>
+
+
+        Lista på updatedName
+        <div id="admin-updated-list"> </div>
+
+        When btn is clicked updated list is published if edited
+        <button id="admin-publish" class="button"> Publish</button> -->
+
+        <br><br>
+        <div class="test">
+            Hello localstorage
+            <!--   kommer att läsa data -->
+        </div>
+
+
+
+    </main>
 
 
 </body>
