@@ -245,6 +245,24 @@ function totalCost(product) {
     localStorage.setItem("totalCost", product.price);
   }
 }
+
+// // Quantity buttons
+function increase_by_one(increase_by_one) {
+  nr = parseInt(document.getElementById(increase_by_one).increase_by_one);
+  document.getElementById(increase_by_one).value = nr + 1;
+ }
+  
+ function decrease_by_one(decrease_by_one) {
+  nr = parseInt(document.getElementById(decrease_by_one).decrease_by_one);
+  if (nr > 0) {
+    if( (nr - 1) > 0) {
+      document.getElementById(decrease_by_one).value = nr - 1;
+    }
+  }
+ } 
+
+
+
 //function for seeing product card in shoppingcart
 //this function should run as soon as we reload the page
 function displayCart() {
@@ -259,15 +277,16 @@ function displayCart() {
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
       <div class="products">
-       <i class="far fa-trash-alt"></i>
-                <img src="${item.url}"/>
-                <span>${item.name}</span>
-            </div>
+        
+            <img src="${item.url}"/>
+            <span>${item.name}</span>
+      </div>
             <div class="price">${item.price} SEK</div>    
             <div class="quantity">
-            <i class="fas fa-arrow-circle-left"></i>
-            <span>${item.inCart}</span>
-            <i class="fas fa-arrow-alt-circle-right"></i>
+              <input id="qty1" type="text" value="1" name="qty" />
+              <button id="increase" onclick="increase_by_one('qty1');">+</button>
+              <span>${item.inCart}</span>
+              <button id="decrease" onclick="decrease_by_one('qty1');" />-</button>
             </div>
             <div class="total">
             ${item.inCart * item.price},00
