@@ -85,9 +85,6 @@ function increase_by_one(increase_by_one) {
  } 
 
 
-
-//function for seeing product card in shoppingcart
-
 //vi ska läsa dessa från productsInCart 
 //function for seeing product card in shoppingcart // FIXA SÅ VI  SER BILD OCH ALL KORREKT INFO
 //this function should run as soon as we reload the page
@@ -104,25 +101,20 @@ function displayCart() {
       productContainer.innerHTML += `
       <div class="products">
         
-            <img src="${item.url}"/>
-            <span>${item.name}</span>
+            <img src="${mappedItems.url}"/>
+            <span>${mappedItems.name}</span>
       </div>
-            <div class="price">${item.price} SEK</div>    
+            <div class="price">${mappedItems.price} SEK</div>
+
             <div class="quantity">
+
               <input id="qty1" type="text" value="1" name="qty" />
               <button id="increase" onclick="increase_by_one('qty1');">+</button>
-              <span>${item.inCart}</span>
+              <span>${mappedItems.inCart}</span>
               <button id="decrease" onclick="decrease_by_one('qty1');" />-</button>
-       <i class="far fa-trash-alt"></i>
-                <img src="${mappedItems.url}"/> 
-                <span>${mappedItems.name}</span>
-            </div>
-            <div class="price">${mappedItems.price} SEK</div>    
-            <div class="quantity">
-            <i class="fas fa-arrow-circle-left"></i>
-            <span>${mappedItems.inCart}</span> 
-            <i class="fas fa-arrow-alt-circle-right"></i>
-            </div>
+                
+           </div>
+            
             <div class="total">
             ${mappedItems.inCart * mappedItems.price},00 
             </div>
