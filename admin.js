@@ -110,7 +110,7 @@ function updateName() {
 
         updateHTML();
 
-        console.log("Ready to publish " + new_name)
+        console.log("Ready to publish" + new_name)
         var pUpdateText = document.createElement("p")
         pUpdateText.innerText = "Ready to publish " + new_name;
         var pUpdateTextDiv = document.querySelector("#admin-update-text");
