@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.products img {
+.products url {
     width: 75px;
 
 }
@@ -101,7 +101,7 @@ body {
     cursor: pointer;
 }
 //Design for "add to cart"//
-#checkout{
+#cart-checkout{
     border: 5px, black;
     padding: 6px;
     margin-top: 1rem;
@@ -114,42 +114,42 @@ body {
 
 }
 //change color when hoovering over btn//
-#checkout:hover { 
+#cart-checkout:hover { 
     background-color: white;
     color: black;
     border: 2px, black; 
 }
 
 /*the log for logotype on shoppingcart headline*/
-.cart-logo {
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-right: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+// .cart-logo {
+//     font-size: 36px;
+//     text-transform: uppercase;
+//     font-weight: 400;
+//     margin-right: 16px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
 
-/*the text NAIL CITY*/
-.cart-logo span{
-    font-weight: 800;
+// /*the text NAIL CITY*/
+// .cart-logo span{
+//     font-weight: 800;
 
-}
+// }
 
-.cart-logo > a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    text-align: center;
+// .cart-logo > a {
+//     text-decoration: none;
+//     color: black;
+//     cursor: pointer;
+//     text-align: center;
 
-}
+// }
 //border for cart
-.cart-border {
-    border-bottom: 4px solid lightgray;
-    margin-top: 10px;
+// .cart-border {
+//     border-bottom: 4px solid lightgray;
+//     margin-top: 10px;
 
-}
+// }
 //login logotype
 .navbar-right-items, .cart-wrapper {
     justify-content: flex-end;

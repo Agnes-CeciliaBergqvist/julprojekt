@@ -6,7 +6,7 @@ const convertedData = JSON.parse(localData);
 
 convertedData.map(e => {
 
-  const div = document.querySelector(".test");
+  const publishedCard = document.querySelector(".test");
 
   //creates a new productcard for each item in array 
   const newProductCardS = document.createElement("div");
@@ -21,7 +21,7 @@ convertedData.map(e => {
   </article>
 `;
 
-  div.appendChild(newProductCardS);
+publishedCard.appendChild(newProductCardS);
 
 })
 
