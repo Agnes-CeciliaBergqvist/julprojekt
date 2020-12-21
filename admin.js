@@ -66,19 +66,46 @@ function view() {
         //creates a new productcard for each item in array 
 
         adminHTML.innerHTML += `   
-          <article class="index-article-card">
+          <article class="index-article-card" id=${mappedAdmin.id}>
           <img class="index-card-img" src="images/essie01.webp" alt="essie nail polish">
           <h3 class="index-h3">${mappedAdmin.name}</h3>
           <p>${mappedAdmin.tag}</p>
           <p>${mappedAdmin.price}</p>
-          <button class="index-btn-flex">Add To Cart</button>
-          <button onclick="removeElement(${mappedAdmin.id}) type="button">Delete</button>
-          <button onclick="editElement(${mappedAdmin.id}) type="button">Edit</button>
+          <button class="index-btn-flex" id=${mappedAdmin.id} onclick="removeElement(this) type="button">Delete</button>
         </article>
-        `;
+        `; // Button for edit <button class="index-btn-flex" onclick="editElement(${mappedAdmin.id}) type="button">Edit</button>
 
     })
 }
+
+//RAKIBS KOD
+function removeElement(element) {  // döpa om element till något tydligare
+    console.log(element)      //  söka i localstorage och rensa den
+}
+ 
+// VÅR KOD
+const itemFromLocalStorage = products.filter( item =>  {
+    if(item.id !== element.id ) {
+        return item.id;
+    }
+
+});
+
+const newItems = itemFromLocalStorage.filter ( mappedAdmin => mappedAdmin.id != element.id ); 
+localStorage.setItem("productList", JSON.parse(newItems));
+
+// RAKIBS KOD
+// itemFromLocalStorage.filter ( item => item.id != element.id )
+
+
+
+
+
+
+
+
+
+
 
 
 
