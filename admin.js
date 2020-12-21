@@ -130,7 +130,7 @@ function deleteItems() {
 
 
 // document.getElementById("admin-delete-btn").addEventListener("click", deleteItems)
-//document.getElementById("admin-edit").addEventListener("click", editName)
+// document.getElementById("admin-edit").addEventListener("click", editName)
 // document.getElementById("admin-update").addEventListener("click", updateName)
 
 
