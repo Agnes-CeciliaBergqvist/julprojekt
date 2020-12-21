@@ -41,33 +41,31 @@ function addProduct() {
 
     localStorage.setItem("productList", JSON.stringify(cleanedData));
 
-    //laddar om sidan så den inte fastnar på samma ställe
+    //reload the page so the array doesn't multiply 
     location.reload()
 
 
-    //kallar på function view som skapar kort på admin
-    view()
+
+
 }
 
+// declares where to put product card on admin.hmtl
+const adminHTML = document.querySelector(".admin-new-product")
 
-//NY KOD BÖRJAR HÄR 
+//calling the function below that creates product cards on admin.html 
+view()
+
 
 //function that creates the card on admin page 
 function view() {
-    
-    const adminHTML = document.querySelector(".admin-new-product")
-    const adminLocalData = localStorage.getItem("productsList");
+
+    const adminLocalData = localStorage.getItem("productList");
     const adminConvertedData = JSON.parse(adminLocalData);
-    
-    
 
     adminConvertedData.map(mappedAdmin => {
-
-       
         //creates a new productcard for each item in array 
-        const newCardElement = document.createElement("div");
-        newCardElement.innerText = mappedAdmin.price;
-        adminHTML.innerHTML =`   
+
+        adminHTML.innerHTML += `   
           <article class="index-article-card">
           <img class="index-card-img" src="images/essie01.webp" alt="essie nail polish">
           <h3 class="index-h3">${mappedAdmin.name}</h3>
@@ -78,11 +76,12 @@ function view() {
           <button onclick="editElement(${mappedAdmin.id}) type="button">Edit</button>
         </article>
         `;
-        adminHTML.appendChild(newCardElement);
+
     })
 }
 
-console.log(view)
+
+
 
 
 
