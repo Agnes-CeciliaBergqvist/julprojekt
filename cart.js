@@ -81,7 +81,7 @@ function totalCost(product) {
   }
 }
 
-// // Quantity buttons
+// Quantity buttons
 function operate(val){
   if(val == "add"){
      var val = document.getElementById('qty1').value;
