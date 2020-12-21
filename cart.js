@@ -16,9 +16,21 @@ for (let i = 0; i < carts.length; i++) {
   })
 }
 
-//function for saving cart when updating page //med cartNumber man ska via längden av returnerad localstorage array 
-function cartNumbers(product) {
-  setItems(product);
+//function for adding product to cart so you can see numbers and adding the products to cart page
+function cartNumbers(products) { 
+  setItems(products);
+  let productNumbers = localStorage.getItem('cartNumbers');
+
+  productNumbers = parseInt(productNumbers);
+
+  if (productNumbers ) {
+    localStorage.setItem('cartNumbers', productNumbers + 1);
+    document.querySelector('#cart-wrapper span').textContent = productNumbers +1; 
+
+  } else {
+    localStorage.setItem('cartNumbers', 1);
+    document.querySelector('#cart-wrapper span').textContent = 1;
+  }
 }
 
 
@@ -46,7 +58,7 @@ function setItems(products) {
 }
 
 
-//function for loading the page and cart is still there (+ SHOWING NUMBER OF PRODUCTS IN CART??)
+//function for loading the page and cart is still there 
 function LoadCartNumbers() {
   let productNumbers = localStorage.getItem('cartNumbers');
 
@@ -69,6 +81,18 @@ function totalCost(product) {
   }
 }
 
+// // Quantity buttons
+function operate(val){
+  if(val == "add"){
+     var val = document.getElementById('qty1').value;
+     val++;
+     document.getElementById('qty1').value = val;
+  } else{
+      var val = document.getElementById('qty1').value;
+      val--;
+      document.getElementById('qty1').value = val;
+  }
+ }
 
 //vi ska läsa dessa från productsInCart 
 //function for seeing product card in shoppingcart // FIXA SÅ VI  SER BILD OCH ALL KORREKT INFO
@@ -85,19 +109,22 @@ function displayCart() {
     cartItems.map(mappedItems => {
       productContainer.innerHTML += `
       <div class="products">
-       <i class="far fa-trash-alt"></i>
-                <img src="${mappedItems.url}"/> 
-                <span>${mappedItems.name}</span>
-            </div>
-            <div class="price">${mappedItems.price} SEK</div>    
+        
+            <img src="${mappedItems.url}"/>
+            <span>${mappedItems.name}</span>
+      </div>
+            <div class="price">${mappedItems.price} SEK</div>
+
             <div class="quantity">
-            <i class="fas fa-arrow-circle-left"></i>
-            <span>${mappedItems.inCart}</span> 
-            <i class="fas fa-arrow-alt-circle-right"></i>
-            </div>
-            <div class="total">
-            ${mappedItems.inCart * mappedItems.price},00 
-            </div>
+
+              <input type="text" name="qty" value="1" id="qty1">
+              <input type="button" value="+" onclick="operate('add')">
+              <span>${mappedItems.inCart}</span>
+              <input type="button" value="-" onclick="operate('dec')">
+             
+           </div>
+            
+           
             `;
     });
 

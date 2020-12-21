@@ -30,7 +30,7 @@ function addProduct() {
 
     const localData = localStorage.getItem("productList");
     const existingData = JSON.parse(localData);
-   
+
     var cleanedData
     if (existingData) {
         cleanedData = existingData.concat(products)
@@ -44,89 +44,128 @@ function addProduct() {
     //laddar om sidan så den inte fastnar på samma ställe
     location.reload()
 
+
+    //kallar på function view som skapar kort på admin
+    view()
 }
 
 
+//NY KOD BÖRJAR HÄR 
 
+//function that creates the card on admin page 
+function view() {
+    
+    const adminHTML = document.querySelector(".admin-new-product")
+    const adminLocalData = localStorage.getItem("productsList");
+    const adminConvertedData = JSON.parse(adminLocalData);
+    
+    
+
+    adminConvertedData.map(mappedAdmin => {
+
+       
+        //creates a new productcard for each item in array 
+        const newCardElement = document.createElement("div");
+        newCardElement.innerText = mappedAdmin.price;
+        adminHTML.innerHTML =`   
+          <article class="index-article-card">
+          <img class="index-card-img" src="images/essie01.webp" alt="essie nail polish">
+          <h3 class="index-h3">${mappedAdmin.name}</h3>
+          <p>${mappedAdmin.tag}</p>
+          <p>${mappedAdmin.price}</p>
+          <button class="index-btn-flex">Add To Cart</button>
+          <button onclick="removeElement(${mappedAdmin.id}) type="button">Delete</button>
+          <button onclick="editElement(${mappedAdmin.id}) type="button">Edit</button>
+        </article>
+        `;
+        adminHTML.appendChild(newCardElement);
+    })
+}
+
+console.log(view)
+
+
+
+//GAMMAL KOD BÖRJAR NEDAN 
 
 
 // keep track of which item is selected
-var selected_name_wrapper = null;
-var selected_name_index = null;
+// var selected_name_wrapper = null;
+// var selected_name_index = null;
 
 // updates the html-file
-function updateHTML() {
-    var list = document.getElementById("admin-list");
-    list.innerHTML = "";
+// function updateHTML() {
+//     var list = document.getElementById("admin-list");
+//     list.innerHTML = "";
 
-    for (let i = 0; i < products.length; i++) {
-        var wrapper = document.createElement("div")
-        wrapper.setAttribute("id", products[i]) // id + dynamic prd array
-        wrapper.addEventListener("click", updateSelectedName)
-        console.log(wrapper)
+//     for (let i = 0; i < products.length; i++) {
+//         var wrapper = document.createElement("div")
+//         wrapper.setAttribute("id", products[i]) // id + dynamic prd array
+//         wrapper.addEventListener("click", updateSelectedName)
+//         console.log(wrapper)
 
-        var div_name = document.createElement("div");
-        div_name.appendChild(document.createTextNode(products[i]))
+//         var div_name = document.createElement("div");
+//         div_name.appendChild(document.createTextNode(products[i]))
 
-        wrapper.appendChild(div_name)
-        list.appendChild(wrapper)
-    }
+//         wrapper.appendChild(div_name)
+//         list.appendChild(wrapper)
+//     }
 
-}
+// }
 
 // When clicking on desired product in list
-function updateSelectedName() {
-    selected_name_wrapper = this; // global var
-    var selected_name = this.getAttribute("id") // fetches id + dynamic prd array
-    selected_name_index = products.indexOf(selected_name) // global var
+// function updateSelectedName() {
+//     selected_name_wrapper = this; // global var
+//     var selected_name = this.getAttribute("id") // fetches id + dynamic prd array
+//     selected_name_index = products.indexOf(selected_name) // global var
 
 
-    var p = document.createElement("p")
-    p.innerText = selected_name;
-    var chosenName = document.querySelector("#admin-chosen-name");
-    chosenName.appendChild(p);
+//     var p = document.createElement("p")
+//     p.innerText = selected_name;
+//     var chosenName = document.querySelector("#admin-chosen-name");
+//     chosenName.appendChild(p);
 
-    console.log("selecting: " + selected_name)
-}
+//     console.log("selecting: " + selected_name)
+// }
 
 
 // When clicking on edit after above step,
 // fills the input box with the name that you want to edit
-function editName() {
-    if (selected_name_wrapper) {
-        var name = selected_name_wrapper.getAttribute("id")
-        document.getElementById("admin-prd-to-edit").value = name;
-        console.log("start editing name")
-    }
-}
+// function editName() {
+//     if (selected_name_wrapper) {
+//         var name = selected_name_wrapper.getAttribute("id")
+//         document.getElementById("admin-prd-to-edit").value = name;
+//         console.log("start editing name")
+//     }
+// }
 
-function updateName() {
-    var new_name = document.getElementById("admin-prd-to-edit").value
-    if (selected_name_wrapper) {
-        products[selected_name_index] = new_name;
+// function updateName() {
+//     var new_name = document.getElementById("admin-prd-to-edit").value
+//     if (selected_name_wrapper) {
+//         products[selected_name_index] = new_name;
 
-        selected_name_wrapper = null;
-        selected_name_index = null;
+//         selected_name_wrapper = null;
+//         selected_name_index = null;
 
-        updateHTML();
+//         updateHTML();
 
-        console.log("Ready to publish " + new_name)
-        var pUpdateText = document.createElement("p")
-        pUpdateText.innerText = "Ready to publish " + new_name;
-        var pUpdateTextDiv = document.querySelector("#admin-update-text");
-        pUpdateTextDiv.appendChild(pUpdateText)
+//         console.log("Ready to publish " + new_name)
+//         var pUpdateText = document.createElement("p")
+//         pUpdateText.innerText = "Ready to publish " + new_name;
+//         var pUpdateTextDiv = document.querySelector("#admin-update-text");
+//         pUpdateTextDiv.appendChild(pUpdateText)
 
-    }
-}
+//     }
+// }
 
 
 // function to remove items from var products.push()
-function deleteItems() {
+// function deleteItems() {
 
-    var removeList = document.querySelector(".test");   // chooses element to delete
-    removeList.removeChild(removeList.lastChild);     //removes last item in array 
+//     var removeList = document.querySelector(".test");   // chooses element to delete
+//     removeList.removeChild(removeList.lastChild);     //removes last item in array 
 
-}
+// }
 
 
 // document.getElementById("admin-delete-btn").addEventListener("click", deleteItems)

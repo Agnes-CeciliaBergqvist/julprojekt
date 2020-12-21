@@ -115,7 +115,7 @@
   flex-direction: row; }
 
 .index-article-card {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -285,6 +285,23 @@ body {
   background-color: black; }
 
 .index-btn-flex:hover, .button:hover {
+  background-color: white;
+  color: black;
+  border: 2px, black; }
+
+.index-loadMoreBtn-con {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem; }
+
+.index-loadMoreBtn, .button {
+  border: 5px, black;
+  padding: 6px;
+  margin-top: 1rem;
+  color: white;
+  background-color: black; }
+
+.index-loadMoreBtn:hover, .button:hover {
   background-color: white;
   color: black;
   border: 2px, black; }
