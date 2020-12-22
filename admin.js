@@ -1,5 +1,7 @@
 // ADMIN PAGE - CREATE, EDIT AND DELETE PRODUCTS 
 
+//const { event } = require("jquery");
+
 // global variable storing the list of names
 // this can be used for local storage and to be used for published new prds
 
@@ -62,52 +64,91 @@ function view() {
     const adminLocalData = localStorage.getItem("productList");
     const adminConvertedData = JSON.parse(adminLocalData);
 
-    adminConvertedData.map(mappedAdmin => {
+    adminConvertedData.map((mappedAdmin, index) => {
         
         //creates a new productcard for each item in array 
         adminHTML.innerHTML += `   
-          <article class="index-article-card" id=${mappedAdmin.id}>
+          <article class="index-article-card" id=${index}>
           <img class="index-card-img" src="images/essie01.webp" alt="essie nail polish">
           <h3 class="index-h3">${mappedAdmin.name}</h3>
           <p>${mappedAdmin.tag}</p>
           <p>${mappedAdmin.price}</p>
-          <button class="index-btn-flex" id=${mappedAdmin.id} onclick="removeElement(this) type="button">Delete</button>
+          <button class="index-btn-flex" id=${index} onclick="" type="button">Delete</button>
         </article>
         `; // Button for edit <button class="index-btn-flex" onclick="editElement(${mappedAdmin.id}) type="button">Edit</button>
 
     })
 }
+//AGNES KOD BÖRJAR HÄR FÖR ATT TA BORT KORT PÅ ADMIN. Denna kod som finns nu tar bort alla article card med rad 95 'remove'
+//rad 96 med 'removeChild' tar den bort första kortet i listan (OBS! rtcl=article)
+
+const removeBtn = document.querySelectorAll(".index-btn-flex");
+removeBtn.textContent = 'Delete';
+
+const div = document.querySelectorAll(".admin-new-product");
+const article = document.querySelectorAll(".index-article-card");
+
+article.forEach(el => el.addEventListener('click', event => {
+    if(event.target.tagName === 'BUTTON') {
+        let button = event.target;
+        let rtcl = button.parentNode;
+        let div = rtcl.parentNode;
+
+        if(button.textContent === 'Delete') {
+            div.removeChild(rtcl);
+        }
+
+    }
+}));
+//AGNES KOD SLUTAR HÄR 
 
 //RAKIBS KOD
-function removeElement(element) {  // döpa om element till något tydligare
-    console.log(element)      //  söka i localstorage och rensa den
-}
+
+// function removeElement(mappedAdmin) {  // döpa om element till något tydligare
+//     const newItems = JSON.parse(localStorage.getItem("productList"))
+//     //console.log(newItems)
+//     console.log(mappedAdmin.id)
+//         for (let i = 0; i < newItems.length; i++) {
+//          if (mappedAdmin.id == newItems[i].id) {
+//             console.log("My id is: " + newItems[i].id)
+//             newItems.splice(i, 1);
+//             console.log(newItems)
+
+//             localStorage.setItem("productList", JSON.stringify(newItems));
+//             console.log(newItems);
+//         }else{
+//             console.log("my if sucks")
+//         }
+//        // location.reload();
+
+//     }
+    
+// }
 
 // VÅR KOD
-const itemFromLocalStorage = products.filter( item =>  {
-    if(item.id !== element.id ) {
-        return item.id;
-    }
-});
+// const itemFromLocalStorage = products.filter( item =>  {
+//     if(item.id !== element.id ) {
+//         return item.id;
+//     }
+// });
 
-const newItems = itemFromLocalStorage.filter ( mappedAdmin => mappedAdmin.id != element.id ); 
-localStorage.setItem("productList", JSON.parse(newItems));
 
-// RAKIBS KOD
+
+// const newItems = itemFromLocalStorage.filter ( mappedAdmin => mappedAdmin.id != element.id ); 
+// localStorage.setItem("productList", JSON.parse(newItems));
+
+// //RAKIBS KOD
 // itemFromLocalStorage.filter ( item => item.id != element.id )
 
 
 
+//VÅR KOD
+// const itemFromLocalStorage = products.filter( item =>  {
+//     if(item.id !== element.id ) {
+//         return item.id;
+//     }
 
-
-
-
-
-
-
-
-
-
+// });
 
 
 
