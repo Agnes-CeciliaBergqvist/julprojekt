@@ -63,8 +63,8 @@ function view() {
     const adminConvertedData = JSON.parse(adminLocalData);
 
     adminConvertedData.map(mappedAdmin => {
+        
         //creates a new productcard for each item in array 
-
         adminHTML.innerHTML += `   
           <article class="index-article-card" id=${mappedAdmin.id}>
           <img class="index-card-img" src="images/essie01.webp" alt="essie nail polish">
