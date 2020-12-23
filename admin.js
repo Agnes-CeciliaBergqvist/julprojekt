@@ -1,5 +1,7 @@
 // ADMIN PAGE - CREATE, EDIT AND DELETE PRODUCTS 
 
+//const { event } = require("jquery");
+
 // global variable storing the list of names
 // this can be used for local storage and to be used for published new prds
 
@@ -62,149 +64,39 @@ function view() {
     const adminLocalData = localStorage.getItem("productList");
     const adminConvertedData = JSON.parse(adminLocalData);
 
-    adminConvertedData.map(mappedAdmin => {
+    adminConvertedData.map((mappedAdmin, index) => {
+        
         //creates a new productcard for each item in array 
-
         adminHTML.innerHTML += `   
-          <article class="index-article-card" id=${mappedAdmin.id}>
+          <article class="index-article-card" id=${index}>
           <img class="index-card-img" src="images/essie01.webp" alt="essie nail polish">
           <h3 class="index-h3">${mappedAdmin.name}</h3>
           <p>${mappedAdmin.tag}</p>
           <p>${mappedAdmin.price}</p>
-          <button class="index-btn-flex" id=${mappedAdmin.id} onclick="removeElement(this) type="button">Delete</button>
+          <button class="index-btn-flex" id=${index} onclick="" type="button">Delete</button>
         </article>
         `; // Button for edit <button class="index-btn-flex" onclick="editElement(${mappedAdmin.id}) type="button">Edit</button>
 
     })
 }
+//AGNES KOD BÖRJAR HÄR FÖR ATT TA BORT KORT PÅ ADMIN. Denna kod som finns nu tar bort alla article card med rad 95 'remove'
+//rad 96 med 'removeChild' tar den bort första kortet i listan (OBS! rtcl=article)
 
-//RAKIBS KOD
-function removeElement(element) {  // döpa om element till något tydligare
-    console.log(element)      //  söka i localstorage och rensa den
-}
- 
-// VÅR KOD
-const itemFromLocalStorage = products.filter( item =>  {
-    if(item.id !== element.id ) {
-        return item.id;
+const removeBtn = document.querySelectorAll(".index-btn-flex");
+removeBtn.textContent = 'Delete';
+
+const div = document.querySelectorAll(".admin-new-product");
+const article = document.querySelectorAll(".index-article-card");
+
+article.forEach(el => el.addEventListener('click', event => {
+    if(event.target.tagName === 'BUTTON') {
+        let button = event.target;
+        let rtcl = button.parentNode;
+        let div = rtcl.parentNode;
+
+        if(button.textContent === 'Delete') {
+            div.removeChild(rtcl);
+        }
+
     }
-
-});
-
-const newItems = itemFromLocalStorage.filter ( mappedAdmin => mappedAdmin.id != element.id ); 
-localStorage.setItem("productList", JSON.parse(newItems));
-
-// RAKIBS KOD
-// itemFromLocalStorage.filter ( item => item.id != element.id )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//GAMMAL KOD BÖRJAR NEDAN 
-
-
-// keep track of which item is selected
-// var selected_name_wrapper = null;
-// var selected_name_index = null;
-
-// updates the html-file
-// function updateHTML() {
-//     var list = document.getElementById("admin-list");
-//     list.innerHTML = "";
-
-//     for (let i = 0; i < products.length; i++) {
-//         var wrapper = document.createElement("div")
-//         wrapper.setAttribute("id", products[i]) // id + dynamic prd array
-//         wrapper.addEventListener("click", updateSelectedName)
-//         console.log(wrapper)
-
-//         var div_name = document.createElement("div");
-//         div_name.appendChild(document.createTextNode(products[i]))
-
-//         wrapper.appendChild(div_name)
-//         list.appendChild(wrapper)
-//     }
-
-// }
-
-// When clicking on desired product in list
-// function updateSelectedName() {
-//     selected_name_wrapper = this; // global var
-//     var selected_name = this.getAttribute("id") // fetches id + dynamic prd array
-//     selected_name_index = products.indexOf(selected_name) // global var
-
-
-//     var p = document.createElement("p")
-//     p.innerText = selected_name;
-//     var chosenName = document.querySelector("#admin-chosen-name");
-//     chosenName.appendChild(p);
-
-//     console.log("selecting: " + selected_name)
-// }
-
-
-// When clicking on edit after above step,
-// fills the input box with the name that you want to edit
-// function editName() {
-//     if (selected_name_wrapper) {
-//         var name = selected_name_wrapper.getAttribute("id")
-//         document.getElementById("admin-prd-to-edit").value = name;
-//         console.log("start editing name")
-//     }
-// }
-
-// function updateName() {
-//     var new_name = document.getElementById("admin-prd-to-edit").value
-//     if (selected_name_wrapper) {
-//         products[selected_name_index] = new_name;
-
-//         selected_name_wrapper = null;
-//         selected_name_index = null;
-
-//         updateHTML();
-
-//         console.log("Ready to publish " + new_name)
-//         var pUpdateText = document.createElement("p")
-//         pUpdateText.innerText = "Ready to publish " + new_name;
-//         var pUpdateTextDiv = document.querySelector("#admin-update-text");
-//         pUpdateTextDiv.appendChild(pUpdateText)
-
-//     }
-// }
-
-
-// function to remove items from var products.push()
-// function deleteItems() {
-
-//     var removeList = document.querySelector(".test");   // chooses element to delete
-//     removeList.removeChild(removeList.lastChild);     //removes last item in array 
-
-// }
-
-
-// document.getElementById("admin-delete-btn").addEventListener("click", deleteItems)
-// document.getElementById("admin-edit").addEventListener("click", editName)
-// document.getElementById("admin-update").addEventListener("click", updateName)
-
-
-
-
-
-
-
-
-
-
-
+}));
