@@ -13,14 +13,13 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 
 
-<!-- Javascript-->
-<script src="https://code.jquery.com/jquery-3.5.1.js"
-			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-			  crossorigin="anonymous"></script>
+    <!-- Javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-<script src="javascript.js" defer></script>
-<script src="cart.js" defer></script>
-<script src="loadproducts.js" defer></script>
+    <script src="javascript.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="loadproducts.js" defer></script>
 
 
 </head>
@@ -51,19 +50,32 @@
 
 
 
-    <div class="test"> 
-            
-    
+    <div class="test">
+
+
     </div>
 
 
 
     <!-- //Load more products button -->
     <div class="index-loadMoreBtn-con">
-        <button class="index-loadMoreBtn">Load Products</button> 
-        </div>  
-    
-    
+        <button class="index-loadMoreBtn">Load Products</button>
+    </div>
+
+
+    <footer id="footer">
+
+        <form id="footer-form" onsubmit="return false">
+            <p> Contact Us</p>
+            <input type="text" placeholder="Enter your name" id="formName">
+            <input type="email" placeholder="Enter your e-mail" id="formEmail">
+            Enter your question <input class="form-question" type="text" id="formQuestion">
+            <span> <input type="checkbox" id="formNewsletter" /> Send me monthly newsletter </span>
+            <button class="index-btn-flex" onclick="sendContact();">Send contact</button>
+        </form>
+
+    </footer>
+
 
 </body>
 

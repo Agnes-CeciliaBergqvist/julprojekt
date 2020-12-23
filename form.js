@@ -1,4 +1,4 @@
-// Create objec to store data inputs in
+// Create object to store data inputs in
 
 var fields = {};
 
