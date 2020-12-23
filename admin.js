@@ -79,8 +79,8 @@ function view() {
 
     })
 }
-//AGNES KOD BÖRJAR HÄR FÖR ATT TA BORT KORT PÅ ADMIN. Denna kod som finns nu tar bort alla article card med rad 95 'remove'
-//rad 96 med 'removeChild' tar den bort första kortet i listan (OBS! rtcl=article)
+
+// Delete function for product cards on admin.html (only deletes i DOM)
 
 const removeBtn = document.querySelectorAll(".index-btn-flex");
 removeBtn.textContent = 'Delete';
