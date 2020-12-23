@@ -27,3 +27,6 @@ publishedCard.appendChild(newProductCardS);
 
 
 
+
+
+

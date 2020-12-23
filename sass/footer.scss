@@ -1,0 +1,27 @@
+#footer {
+    height: auto;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footer-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#footer-form >input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-question {
+    height: 5rem;
+}
+
+.placeholderRed {
+    color:red
+}

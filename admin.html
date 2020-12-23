@@ -7,6 +7,7 @@
 
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="admin.js" defer></script>
+    <script src="form.js" defer></script>
 
     <title>Admin</title>
 </head>
@@ -23,8 +24,8 @@
         <!-- Menu options -->
         <div id="nav-bar">
             <a class="nav-bar-a" href="index.html"> Products </a>
-            <a class="nav-bar-a" href="index.html"> Brands </a>
-            <a class="nav-bar-a" href="login.html"> Contact Us (login) </a>
+            <a class="nav-bar-a" href="index.html"> Contact Us </a>
+            <a class="nav-bar-a" href="login.html"> Login </a>
             <a class="nav-bar-a" href="admin.html"> Admin </a>
         </div>
 
@@ -36,14 +37,26 @@
     </header>
 
 
-
+    <!-- Main section for input fields and new products -->
     <main id="admin-main">
-        Headline: <input type="text" id="admin-headline-input"><br><br>
-        Description: <input type="text" id="admin-decsrip-input"><br><br>
-        Price: <input type="number" id="admin-price-input"><br><br>
-        <button id="admin-add-name" class="button">Add Product</button>
 
-        <br><br>
+        <!-- Admin input fields for new products -->
+        <div class="admin-parent-box">
+            <div class="admin-input-fields">
+
+                <p class="admin-info-text"> <b> Welcome Admin! </b> This is were you add and delete new products.
+                    Please fill in required input fields below in order to do so.</p>
+
+                Headline: <input type="text" id="admin-headline-input">
+                Description: <input type="text" id="admin-decsrip-input">
+                Price: <input type="number" id="admin-price-input">
+                <button id="admin-add-name" class="button">Add Product</button>
+
+            </div>
+        </div>
+
+        <!-- Section for local storage and new products -->
+
         <div class="test">
             <!--   Local Storage data to be read -->
         </div>
@@ -53,6 +66,19 @@
         </div>
 
     </main>
+
+    <footer id="footer">
+
+        <form id="footer-form" onsubmit="return false">
+            <p> Contact Us</p>
+            <input type="text" placeholder="Enter your name" id="formName">
+            <input type="email" placeholder="Enter your e-mail" id="formEmail">
+            <input class="form-question" type="text" placeholder="Enter your question" id="formQuestion">
+            <span> <input type="checkbox" id="formNewsletter" /> Send me monthly newsletter </span>
+            <button class="index-btn-flex" onclick="sendContact();">Send contact</button>
+        </form>
+
+    </footer>
 
 
 </body>

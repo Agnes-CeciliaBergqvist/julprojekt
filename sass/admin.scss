@@ -1,18 +1,31 @@
-#admin-main {
-    background-color: rgb(255, 255, 255);
-    color: rgb(71, 71, 71);
-    padding-left: 20px;
-    padding-top: 5rem;
+/* Admin parent box*/
+.admin-parent-box {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+/* Text above input fields */
+.admin-info-text {
+    padding-bottom: 1.5rem;
 }
 
-/* ALL KOD NEDAN SKA UPPDATERAS AV AP */ 
-/* Input fields*/
+/* Input fields */
+.admin-input-fields {
+    width: 25%;
+    color: rgb(71, 71, 71);
+    display: flex;
+    flex-direction: column;
+}
+
+#admin-headline-input, #admin-decsrip-input, #admin-price-input {
+    margin-bottom: 1rem;
+}
 
 
-
-
-
-/* Används när bildens appends till ul ".admin-prd-list*/
+/* Is used when image apends to ul ".admin-prd-list */
 .admin-prd-list >img {
     width: 20%;
     height: 20%;
