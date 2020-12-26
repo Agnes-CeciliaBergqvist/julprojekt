@@ -1,0 +1,13 @@
+#start-hero-image {
+    height: 50rem;
+    background-image: url(images/start-hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#start-hero-image-p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

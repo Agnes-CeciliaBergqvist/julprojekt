@@ -85,10 +85,20 @@
 #submit:hover {
   opacity: 0.8; }
 
+#start-hero-image {
+  height: 50rem;
+  background-image: url(images/start-hero-image.jpg);
+  background-size: cover;
+  background-position: center; }
+
+#start-hero-image-p {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
 #header {
   padding: 0.5rem;
   padding-left: 2rem;
-  margin-bottom: 1rem;
   text-align: center;
   background-color: black;
   color: white;
