@@ -4,7 +4,6 @@
 
 // global variable storing the list of names
 // this can be used for local storage and to be used for published new prds
-
 let products = []
 document.getElementById("admin-add-name").addEventListener("click", addProduct)
 
@@ -13,6 +12,7 @@ document.getElementById("admin-add-name").addEventListener("click", addProduct)
 function addProduct() {
 
     // values from input fields 
+    var id = 0;
     var adminHeadline = document.querySelector("#admin-headline-input").value;
     var adminDescription = document.querySelector("#admin-decsrip-input").value;
     var adminPrice = document.querySelector("#admin-price-input").value;
@@ -20,24 +20,29 @@ function addProduct() {
     adminPrdImage.src = "images/opi04.webp"; // sets image source
 
     let product = {}
-
     product.name = adminHeadline;
     product.tag = adminDescription;
     product.price = adminPrice;
     product.inCart = "";
     product.url = adminPrdImage;
 
-    // store new products added by admin in local storage
-    products.push(product)
-
     const localData = localStorage.getItem("productList");
     const existingData = JSON.parse(localData);
 
     var cleanedData
     if (existingData) {
+        // store new products added by admin in local storage
+        id = parseInt(localStorage.getItem("id"))
+        product.id = id + 1
+        products.push(product)
         cleanedData = existingData.concat(products)
+        localStorage.removeItem("id")
+        localStorage.setItem("id", JSON.stringify(product.id));
 
     } else {
+        product.id = id
+        products.push(product)
+        localStorage.setItem("id", JSON.stringify(product.id));
         cleanedData = products
     }
 
@@ -45,10 +50,6 @@ function addProduct() {
 
     //reload the page so the array doesn't multiply 
     location.reload()
-
-
-
-
 }
 
 // declares where to put product card on admin.hmtl
@@ -68,7 +69,7 @@ function view() {
         
         //creates a new productcard for each item in array 
         adminHTML.innerHTML += `   
-          <article class="index-article-card" id=${index}>
+          <article class="index-article-card" id=${mappedAdmin.id}>
           <img class="index-card-img" src="images/essie01.webp" alt="essie nail polish">
           <h3 class="index-h3">${mappedAdmin.name}</h3>
           <p>${mappedAdmin.tag}</p>
@@ -79,8 +80,7 @@ function view() {
 
     })
 }
-
-// Delete function for product cards on admin.html (only deletes i DOM)
+// Delete button - does not delete in array
 
 const removeBtn = document.querySelectorAll(".index-btn-flex");
 removeBtn.textContent = 'Delete';
@@ -93,10 +93,38 @@ article.forEach(el => el.addEventListener('click', event => {
         let button = event.target;
         let rtcl = button.parentNode;
         let div = rtcl.parentNode;
+        let rtclId = rtcl.id;
 
         if(button.textContent === 'Delete') {
             div.removeChild(rtcl);
+            let prdList = JSON.parse(localStorage.getItem('productList'));
+            
+
+            var index;
+            for (var i = 0; i < prdList.length; i++) {
+                if (parseInt(prdList[i].id) === parseInt(rtclId)) {
+                    index = i;
+                    break;
+                }
+            }
+            console.log(index)
+            if(index === undefined) return 
+
+            prdList.splice(index,1); // delete item at index
+            localStorage.setItem("productList", JSON.stringify(prdList));
         }
 
     }
+
 }));
+
+
+
+
+
+
+
+
+
+
+
