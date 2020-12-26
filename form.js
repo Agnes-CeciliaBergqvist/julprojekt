@@ -59,7 +59,7 @@ function sendContact() {
         let usr = new User(formName.value, formEmail.value, formNewsletter
             .checked, formQuestion.value);
 
-        alert(`${usr.firstName} thanks for contacting us! `)
+        alert(`Thanks for contacting us ${usr.firstName}! `)
     } else {
         alert("There was an error");
     }
