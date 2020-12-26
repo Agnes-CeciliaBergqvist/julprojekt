@@ -1,0 +1,23 @@
+/* Font size on blog posts p on start.html for mobile */
+
+@media screen and (max-width: 500px) {
+
+    #start-blog-posts-p {
+    font-size: 0.5rem;
+    }
+
+    #start-new-products-headline {
+    font-size: 2rem;
+
+    }
+
+    #footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+}
