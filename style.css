@@ -120,6 +120,25 @@
   font-size: 18px;
   cursor: pointer; }
 
+#contact-form-main {
+  height: auto;
+  display: flex;
+  justify-content: center; }
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem; }
+
+#contact-form > input {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.form-question {
+  height: 5rem; }
+
 .admin-new-product, .test {
   display: flex;
   flex-direction: row;

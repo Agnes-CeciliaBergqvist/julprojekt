@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="form.js" defer></script>
+
+    <title>Contact Us</title>
+</head>
+
+<body id="contact-body">
+
+    <header id="header">
+
+        <!-- Logo -->
+        <div id="header-logo">
+            <a href="index.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
+        </div>
+
+        <!-- Menu options -->
+        <div id="nav-bar">
+            <a class="nav-bar-a" href="index.html"> Products </a>
+            <a class="nav-bar-a" href="index.html"> Contact Us </a>
+            <a class="nav-bar-a" href="login.html"> Login </a>
+            <a class="nav-bar-a" href="admin.html"> Admin </a>
+        </div>
+
+        <!-- Cart -->
+        <div id="cart-wrapper">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span>0</span></a>
+        </div>
+
+    </header>
+
+    <main id="contact-form-main">
+
+        <form id="contact-form" onsubmit="return false">
+            <p> Contact Us</p>
+            <input type="text" placeholder="Enter your name" id="formName">
+            <input type="email" placeholder="Enter your e-mail" id="formEmail">
+            Enter your question <input class="form-question" type="text" id="formQuestion">
+            <span> <input type="checkbox" id="formNewsletter" /> Send me monthly newsletter </span>
+            <button class="index-btn-flex" onclick="sendContact();">Send contact</button>
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
