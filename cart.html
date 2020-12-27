@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shopping cart-Checkout</title>
+  
   <!-- Fontawesome-->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -24,7 +25,7 @@
 
     <!-- Logo -->
     <div id="header-logo">
-      <a href="index.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
+      <a href="start.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
     </div>
 
     <!-- Menu options -->
@@ -61,7 +62,56 @@
     </div>
   </div>
 
-  <input id="cart-checkout" type="button" onclick="clickAlert()" value="CHECKOUT">
+
+  <button data-modal-target="#modal" id="checkout-popup">CHECKOUT</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">CHECKOUT</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      GRATTIS DITT KÖP ÄR GENOMFÖRT.
+      DIN ORDER ÄR PÅVÄG!
+
+      KLICKA NEDAN FÖR ATT LADDA HEM FAKTURA.
+      PDF-FAKTURA
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+  
+
+  <footer id="footer">
+
+    <nav class="footer-nav">
+
+      <ul>
+        <li class="footer-nav-li-headline"> ADMIN </li>
+        <li class="footer-nav-li"> <a href="login.html"> Login </a> </li>
+        <li class="footer-nav-li"> <a href="admin.html"> Admin </a> </li>
+
+      </ul>
+
+    </nav>
+
+    <nav class="footer-address">
+      <li class="footer-nav-li-headline">ADDRESS </li>
+      <div class="address">NailCity AB</div>
+      <div class="address">hej@nailcity.se</div>
+      <div class="address">Manikyrgatan 1 <br> 123 45 Stockholm</div>
+
+    </nav>
+
+    <nav class="footer-social">
+      <li class="footer-nav-li-headline"> FOLLOW US </li>
+      <div class="social"> <i class="fab fa-facebook"></i> Facebook</div>
+      <div class="social"> <i class="fab fa-instagram"></i> Instagram</div>
+      <div class="social"> <i class="fab fa-twitter-square"></i> Twitter</div>
+
+    </nav>
+
+
+  </footer>
 
 
 

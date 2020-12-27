@@ -1,23 +1,27 @@
-/*mother to login form*/
+
+/* Login body*/
+#login-body {
+    background-color: lightgrey;
+}
+
+/* Mother to login form */
 .login-container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color:#f99f30;
-    
-   
-
+    padding-top: 8rem;
 }
-/*daughter to container*/
+
+/* Daughter to container */
 .login-main {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 13rem; 
-
 }
-/*img og avatar*/
+
+/* Image to avatar */
 .login-avatar {
     width: 40%;
     border-radius: 50%;
@@ -25,19 +29,22 @@
     position: relative;
     margin: 12px 0 12px 57px;
 }
-/*classes for label to input fields */
+
+/* Classes for label to input fields */
 .login-name, .login-password {
     display: flex;
     margin: 3.5px;
 }
-/*the whole form*/
+
+/* The whole form */
 #login-form_id {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
-/*button for login*/
+
+
+/* Button for login */
 #login-submit {
     margin: 0.2rem;
     background-color: #4CAF50;
@@ -46,10 +53,11 @@
     margin: 8px 0;
     border: none; 
 }
-/*button for hover*/
+
+
+/* Button for hover */
 #submit:hover { 
     opacity: 0.8;
-
 }
 
 

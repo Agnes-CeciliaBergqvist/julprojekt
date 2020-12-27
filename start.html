@@ -5,7 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
+    <title> NailCity </title>
+
     <!-- Fontawesome-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -14,9 +15,7 @@
 
 
     <!-- Javascript-->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="javascript.js" defer></script>
     <script src="cart.js" defer></script>
     <script src="loadproducts.js" defer></script>
@@ -31,7 +30,7 @@
 
         <!-- Logo -->
         <div id="header-logo">
-            <a href="index.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
+            <a href="start.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
         </div>
 
         <!-- Menu options -->
@@ -50,30 +49,102 @@
     </header>
 
     <main>
-        <article> 
-            <section id="start-hero-image"> 
-                <p id="start-hero-image-p">Hudens behov och tillstånd kan ändras under de olika årstiderna. Våra hudterapeuter hjälper dig med en hudvårdsrekommendation anpassad för just din hud.</p>
+        <article>
+            <section id="start-hero-image">
+                <div id="start-hero-text">
+                    <h1 id="start-hero-h1"> Find Your Dream Color This Season </h1>
+                    <p id="start-hero-p">Choose from our palette of iconic nail enamel shades, limited edition
+                        collections, lust-worthy longwear hues and nail colors that care. </p>
+                </div>
             </section>
 
+            <section id="start-categories">
+                <div id="start-categories-buttons">Nail Polish</div>
+                <div id="start-categories-buttons">Nail Care</div>
+                <div id="start-categories-buttons">Nail Sets</div>
+                <div id="start-categories-buttons-white" onclick="window.location='index.html';"> Products </div>
+                <div id="start-categories-buttons-white">Brands</div>
 
+            </section>
 
+            <section id="start-blog">
 
+                <div id="start-blog-posts">
+                    <img src="images/start-blog-posts-img.jpg" alt="">
+                </div>
 
+                <div id="start-blog-posts">
+                    <p id="start-blog-posts-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+                        voluptatibus veniam consequatur ad, possimus dignissimos facere quisquam cupiditate ipsa itaque
+                        at placeat a, quibusdam ducimus veritatis sed natus quae adipisci. Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Eius voluptatibus veniam consequatur ad, possimus dignissimos
+                        facere quisquam cupiditate ipsa itaque at placeat a, quibusdam ducimus veritatis sed natus quae
+                        adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptatibus veniam
+                        consequatur ad, possimus dignissimos facere quisquam cupiditate ipsa itaque at placeat a,
+                        quibusdam ducimus veritatis sed natus quae adipisci.</p>
+                </div>
 
+                <div id="start-blog-posts">
+                    <img src="images/start-blog-posts-img2.jpg" alt="">
+                </div>
 
+            </section>
 
+            <section id="start-new-products">
+                <div id="start-new-products-headline"> - New Products -
+                </div>
+
+                <div class="test">
+                    <!-- New Products from local storage-->
+                </div>
+
+                <div id="start-below-new-products">
+                    <!-- Empty space -->
+                </div>
+
+            </section>
         </article>
-
-
-
-
-
-
 
     </main>
 
+    <footer id="footer">
+
+        <nav class="footer-nav">
+
+            <ul>
+                <li class="footer-nav-li-headline"> ADMIN </li>
+                <li class="footer-nav-li"> <a href="login.html"> Login </a> </li>
+                <li class="footer-nav-li"> <a href="admin.html"> Admin </a> </li>
+
+            </ul>
+
+        </nav>
+
+        <nav class="footer-address">
+            <li class="footer-nav-li-headline">ADDRESS </li>
+            <div class="address">NailCity AB</div>
+            <div class="address">hej@nailcity.se</div>
+            <div class="address">Manikyrgatan 1 <br> 123 45 Stockholm</div>
+
+        </nav>
+
+        <nav class="footer-social">
+            <li class="footer-nav-li-headline"> FOLLOW US </li>
+            <div class="social"> <i class="fab fa-facebook"></i> Facebook</div>
+            <div class="social"> <i class="fab fa-instagram"></i> Instagram</div>
+            <div class="social"> <i class="fab fa-twitter-square"></i> Twitter</div>
+
+        </nav>
 
 
+    </footer>
+
+
+
+    <p class="copyright">
+
+        &copy; Copyright 2020 NailCity
+    </p>
 
 
 
