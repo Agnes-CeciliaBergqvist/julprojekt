@@ -35,13 +35,21 @@
 .admin-prd-list-h3 {
   font-size: 1.7rem; }
 
+/* Section below new added products */
+#admin-below-products {
+  height: 4rem; }
+
+/* Login body*/
+#login-body {
+  background-color: lightgrey; }
+
 /* Mother to login form */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background-color: lightgrey; }
+  padding-top: 8rem; }
 
 /* Daughter to container */
 .login-main {
@@ -230,13 +238,11 @@
   cursor: pointer; }
 
 /* Form */
-#contact-body {
-  background-color: lightgrey; }
-
 #contact-form-main {
   height: auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 5rem; }
 
 #contact-form {
   display: flex;
@@ -539,18 +545,32 @@
   background-color: lightgrey;
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
   padding-top: 2rem;
   padding-bottom: 2rem; }
+
+.footer-nav {
+  position: absolute;
+  left: 1rem; }
+
+.footer-social {
+  position: absolute;
+  right: 1rem; }
 
 .footer-address, .footer-social, .footer-nav {
   margin: 2rem; }
 
 .footer-nav {
+  text-align: left; }
+
+.footer-nav-li-headline {
+  padding-bottom: 1rem; }
+
+.footer-address {
   text-align: center; }
 
-.footer-nav-li {
+.footer-nav-li, .footer-nav-li-headline {
   list-style-type: none; }
 
 .footer-nav-li > a {
@@ -569,15 +589,31 @@ a:visited {
   text-align: center;
   padding-bottom: 1.5rem; }
 
-/* Font size on blog posts p on start.html for mobile */
 @media screen and (max-width: 500px) {
+  /* Font size on blog posts p on start.html for mobile */
+  #start-hero-text {
+    padding: 2rem; }
+  #start-hero-h1 {
+    font-size: 2rem; }
+  /* Margins for startpage */
+  #start-blog {
+    margin: 0.5rem; }
+  #start-categories {
+    margin: 1rem; }
   #start-blog-posts-p {
-    font-size: 0.5rem; }
+    font-size: 0.8rem; }
   #start-new-products-headline {
     font-size: 2rem; }
+  #start-below-new-products {
+    height: 5rem; }
+  /* Margins on adminpage */
+  .admin-input-fields {
+    width: 100%;
+    margin: 2rem; }
+  /* Footer */
   #footer {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center; }
-  .footer-nav {
+  .footer-nav, .footer-social {
     display: none; } }
