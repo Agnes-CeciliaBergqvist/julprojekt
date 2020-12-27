@@ -465,10 +465,20 @@ a:visited {
 
 /* Font size on blog posts p on start.html for mobile */
 @media screen and (max-width: 500px) {
+  #start-hero-text {
+    padding: 2rem; }
+  #start-hero-h1 {
+    font-size: 2rem; }
+  #start-blog {
+    margin: 0.5rem; }
+  #start-categories {
+    margin: 1rem; }
   #start-blog-posts-p {
-    font-size: 0.5rem; }
+    font-size: 0.8rem; }
   #start-new-products-headline {
     font-size: 2rem; }
+  #start-below-new-products {
+    height: 5rem; }
   #footer {
     flex-direction: column-reverse;
     align-items: center;
