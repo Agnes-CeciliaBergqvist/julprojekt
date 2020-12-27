@@ -1,13 +1,12 @@
 
-//Readmore button on product
+/* Readmore button on product */
 #myBtn {
     color: coral;
     border: none;
 }
 
 
-//Design for Button//
-//Design for "add to cart"//
+/* Design for button and  for "add to cart"*/
 .index-btn-flex, .button {
     border: 5px, black;
     padding: 6px;
@@ -15,8 +14,32 @@
     color: white;
     background-color: black;
 }
-//change color when hoovering over btn//
+
+
+/* Change color when hoovering over button */
 .index-btn-flex:hover, .button:hover { 
+    background-color: white;
+    color: black;
+    border: 2px, black; 
+}
+
+
+/* Design for "add to cart"-button */
+#cart-checkout {
+    border: 5px, black;
+    padding: 6px;
+    margin-top: 1rem;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+/* Change color when hoovering over button */
+#cart-checkout:hover { 
     background-color: white;
     color: black;
     border: 2px, black; 

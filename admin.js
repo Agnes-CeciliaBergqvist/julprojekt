@@ -1,4 +1,4 @@
-// ADMIN PAGE - CREATE, EDIT AND DELETE PRODUCTS 
+// ADMIN PAGE - CREATE AND DELETE PRODUCTS 
 
 //const { event } = require("jquery");
 

@@ -1,3 +1,5 @@
+
+/* Load more button */
 .index-loadMoreBtn-con{
     display: flex;
     justify-content: center;
@@ -5,7 +7,7 @@
 
 }
 
-//Design for "Load Products"//
+/* Design for "Load Products" */
 .index-loadMoreBtn, .button {
     border: 5px, black;
     padding: 6px;
@@ -13,7 +15,8 @@
     color: white;
     background-color: black;
 }
-//change color when hoovering over btn//
+
+/* Change color when hoovering over btn */
 .index-loadMoreBtn:hover, .button:hover { 
     background-color: white;
     color: black;

@@ -1,5 +1,5 @@
-/* Hero Section */
 
+/* Hero Section */
 #start-hero-image {
     height: 50rem;
     background-image: url(images/start-nailpolish.jpg);
@@ -27,7 +27,6 @@
 }
 
 /* Categories Section */
-
 #start-categories {
     display: flex;
     flex-direction: row;
@@ -38,7 +37,7 @@
 }
 
 
-/* Black buttons*/
+/* Black buttons */
 #start-categories-buttons {
     width: 20rem;
     height: 6rem;
@@ -52,7 +51,7 @@
     flex-grow: 1;
 }
 
-/* Changes color when hoovering over btn */
+/* Changes color when hoovering over button */
 #start-categories-buttons:hover { 
     background-color: white;
     color: black;
@@ -61,7 +60,6 @@
 }
 
 /* White buttons*/
-
 #start-categories-buttons-white {
     width: 20rem;
     height: 6rem;
@@ -81,8 +79,8 @@
     color: white;
 }
 
-/* Blog Section*/
 
+/* Blog Section*/
 #start-blog {
     display: flex;
     flex-direction: row;
@@ -118,7 +116,6 @@
 
 
 /* New Products Section */ 
-
 #start-new-products {
     display: flex;
     flex-direction: column;
@@ -129,11 +126,9 @@
     display: flex;
     margin-bottom: 2.5rem;
     justify-content: center;
-
 }
 
 #start-below-new-products {
     height: 15rem;
-
 }
 

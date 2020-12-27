@@ -1,14 +1,5 @@
 
-//container for prdt cards (ANVÄNDER VI DETTA??)
-// .index-flex-card-cntr { 
-//     margin-top: 50px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-around; 
-//     flex-direction: row;
-//     }
-
-// containter to product cards on admin.html (admin-new-product) and index.html (test) pages
+/* Containter to product cards on admin.html (admin-new-product) and index.html (test) pages */
 .admin-new-product, .test {
     display: flex;
     flex-direction: row;
@@ -16,7 +7,7 @@
     justify-content: center;
 }    
     
-//product cards
+/* Product cards */
 .index-article-card { 
     display: flex;
     flex-direction: column;
@@ -38,7 +29,7 @@
 }
 
 
-//Design for "add to cart"//
+/* Design for "add to cart" */
 .index-btn-flex {
     border: 5px, black;
     padding: 6px;
@@ -47,13 +38,14 @@
     background-color: black;
 }
 
-//change color when hoovering over btn//
+/* Change color when hoovering over button */
 .index-btn-flex:hover { 
     background-color: white;
     color: black;
     border: 2px, black; 
 }
 
+/* Size on h3 */
 .index-h3 {
     font-size: 13px;
 }

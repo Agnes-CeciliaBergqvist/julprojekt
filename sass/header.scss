@@ -1,3 +1,5 @@
+
+/* Header */
 #header {
     padding: 0.5rem;
     padding-left: 2rem;
@@ -10,19 +12,17 @@
     flex-flow: row wrap;
 }
 
-/* Items in nav bar */ 
 
+/* Items in nav bar */ 
 .nav-bar-a {
     text-decoration: none;
     color: white;
-    padding: 14px 20px;
-    
+    padding: 14px 20px;  
 }
 
 
 
-/* Cart */
-
+/* Cart in nav bar */
 #cart-wrapper {
     position: absolute;
     right: 2rem;
@@ -33,9 +33,10 @@
 
 #cart-wrapper > a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 14px;
 }
+
 
 #cart-wrapper i {
     font-size: 18px;
