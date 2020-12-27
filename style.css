@@ -349,8 +349,8 @@
   width: 100%;
   flex-wrap: wrap; }
 
-.products url {
-  width: 75px; }
+.cart-card-img {
+  width: 10%; }
 
 .basketTotalContainer {
   display: flex;
