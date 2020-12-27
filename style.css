@@ -104,7 +104,7 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   flex-flow: row wrap; }
 
 /* Items in nav bar */
@@ -113,11 +113,12 @@
   color: white;
   padding: 14px 20px; }
 
+#header-logo {
+  padding-left: 1.5rem; }
+
 /* Cart */
 #cart-wrapper {
-  position: absolute;
-  right: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   color: white;
   background-color: white; }
 
@@ -331,3 +332,31 @@ body {
   background-color: white;
   color: black;
   border: 2px, black; }
+
+/* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    display: none; }
+  .topnav a.icon {
+    float: right;
+    display: flex;
+    flex-direction: inherit; } }
+
+.icon {
+  color: white;
+  display: none; }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .icon {
+    color: white; }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left; } }

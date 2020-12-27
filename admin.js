@@ -1,6 +1,5 @@
-// ADMIN PAGE - CREATE, EDIT AND DELETE PRODUCTS 
+// ADMIN PAGE - CREATE AND DELETE PRODUCTS 
 
-//const { event } = require("jquery");
 
 // global variable storing the list of names
 // this can be used for local storage and to be used for published new prds
@@ -76,18 +75,20 @@ function view() {
           <p>${mappedAdmin.price}</p>
           <button class="index-btn-flex" id=${index} onclick="" type="button">Delete</button>
         </article>
-        `; // Button for edit <button class="index-btn-flex" onclick="editElement(${mappedAdmin.id}) type="button">Edit</button>
+        `; 
 
     })
 }
-// Delete button - does not delete in array
+// Delete button on product cards
 
+// Declares where to put the deletebutton on adminpage
 const removeBtn = document.querySelectorAll(".index-btn-flex");
 removeBtn.textContent = 'Delete';
 
 const div = document.querySelectorAll(".admin-new-product");
 const article = document.querySelectorAll(".index-article-card");
 
+//Function that removes productcard from index and localstorage
 article.forEach(el => el.addEventListener('click', event => {
     if(event.target.tagName === 'BUTTON') {
         let button = event.target;
@@ -99,7 +100,6 @@ article.forEach(el => el.addEventListener('click', event => {
             div.removeChild(rtcl);
             let prdList = JSON.parse(localStorage.getItem('productList'));
             
-
             var index;
             for (var i = 0; i < prdList.length; i++) {
                 if (parseInt(prdList[i].id) === parseInt(rtclId)) {
@@ -107,24 +107,10 @@ article.forEach(el => el.addEventListener('click', event => {
                     break;
                 }
             }
-            console.log(index)
             if(index === undefined) return 
 
             prdList.splice(index,1); // delete item at index
             localStorage.setItem("productList", JSON.stringify(prdList));
         }
-
     }
-
 }));
-
-
-
-
-
-
-
-
-
-
-

@@ -14,9 +14,9 @@
 
 
     <!-- Javascript-->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+    <script src="navbar.js" defer></script>
     <script src="javascript.js" defer></script>
     <script src="cart.js" defer></script>
     <script src="loadproducts.js" defer></script>
@@ -28,34 +28,38 @@
 <body>
     <header id="header">
 
+        <!-- Menu options -->
+        
+        <div class="topnav" id="nav-bar">
+            <a class="nav-bar-a" href="start.html"> Home </a>
+            <a class="nav-bar-a" href="start.html"> Categories </a>
+            <a class="nav-bar-a" href="start.html"> Brands </a>
+            <a class="nav-bar-a" href="contact.html"> Contact Us </a>
+            <!-- <a class="nav-bar-a" href="admin.html"> Categories</a>  -->
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
         <!-- Logo -->
+        
         <div id="header-logo">
             <a href="index.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
         </div>
 
-        <!-- Menu options -->
-        <div id="nav-bar">
-            <a class="nav-bar-a" href="index.html"> Products </a>
-            <a class="nav-bar-a" href="contact.html"> Contact Us </a>
-            <a class="nav-bar-a" href="login.html"> Login </a>
-            <a class="nav-bar-a" href="admin.html"> Admin </a>
-        </div>
-
         <!-- Cart -->
+        
         <div id="cart-wrapper">
-            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span>0</span></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span>0</span></a>
         </div>
 
     </header>
-
-
 
     <div class="test">
 
 
     </div>
-
-
 
     <!-- //Load more products button -->
     <div class="index-loadMoreBtn-con">
