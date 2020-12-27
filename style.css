@@ -252,6 +252,47 @@
 .form-question {
   height: 5rem; }
 
+/* Img and text on product site as header*/
+.index-flexbox-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.index-prd-head {
+  width: 20rem;
+  background-color: black;
+  margin: 0.7rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row; }
+
+.index-prd-img {
+  height: 100%;
+  width: 100%;
+  display: flex; }
+
+.index-prd-head > p {
+  color: white;
+  font-size: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.index-headline-brand {
+  display: flex;
+  justify-content: center;
+  margin: 2.3rem;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.index-headline-brand > span:hover {
+  text-decoration: underline;
+  cursor: pointer; }
+
+.index-headline-brand > span {
+  margin: 10px; }
+
 /* Containter to product cards on admin.html (admin-new-product) and index.html (test) pages */
 .admin-new-product, .test {
   display: flex;

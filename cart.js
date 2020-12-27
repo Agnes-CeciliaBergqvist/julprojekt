@@ -180,12 +180,6 @@ function closeModal(modal) {
 }
 
 
-
-//make an alert on checkoutbutton 
-function clickAlert() {
-  alert("CONGRATULATIONS, YOU SUCCESSFULLY MADE A PURCHASE!");
-}
-
 //calling functions 
 LoadCartNumbers();
 displayCart();
