@@ -1,11 +1,16 @@
 
+/* Login body*/
+#login-body {
+    background-color: lightgrey;
+}
+
 /* Mother to login form */
 .login-container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: lightgrey;
+    padding-top: 8rem;
 }
 
 /* Daughter to container */

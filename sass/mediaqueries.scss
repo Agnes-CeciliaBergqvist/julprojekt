@@ -1,7 +1,8 @@
 
-/* Font size on blog posts p on start.html for mobile */
+
 @media screen and (max-width: 500px) {
 
+    /* Font size on blog posts p on start.html for mobile */
     #start-hero-text {
         padding: 2rem;
     }
@@ -10,6 +11,7 @@
         font-size: 2rem;
     }
 
+    /* Margins for startpage */
     #start-blog  {
         margin: 0.5rem;
     }
@@ -30,13 +32,20 @@
         height: 5rem;
     }
 
+    /* Margins on adminpage */
+    .admin-input-fields {
+        width: 100%;
+        margin: 2rem;
+    }
+
+    /* Footer */
     #footer {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
 
-    .footer-nav {
+    .footer-nav, .footer-social {
         display: none;
     }
 

@@ -4,25 +4,43 @@
     background-color: lightgrey;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    
 }
 
+.footer-nav {
+    position: absolute;
+    left: 1rem;
+}
+
+.footer-social {
+    position: absolute;
+    right: 1rem;
+}
 
 .footer-address, .footer-social, .footer-nav {
     margin: 2rem;
 }
 
 .footer-nav {
+    text-align: left;
+}
+
+.footer-nav-li-headline {
+    padding-bottom: 1rem;
+
+}
+
+.footer-address {
     text-align: center;
 }
 
 
-.footer-nav-li {
+.footer-nav-li, .footer-nav-li-headline {
     list-style-type: none;
-
 }
 
 .footer-nav-li >a {
