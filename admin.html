@@ -12,6 +12,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <!-- Javascript-->
+    <script src="navbar.js" defer></script>
     <script src="admin.js" defer></script>
 
     <title>Admin</title>
@@ -21,17 +22,20 @@
 
     <header id="header">
 
+        <!-- Menu options -->
+        
+        <div class="topnav" id="nav-bar">
+            <a class="nav-bar-a" href="start.html"> Home </a>
+            <a class="nav-bar-a" href="index.html"> Products </a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
         <!-- Logo -->
         <div id="header-logo">
             <a href="start.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
-        </div>
-
-        <!-- Menu options -->
-        <div id="nav-bar">
-            <a class="nav-bar-a" href="index.html"> Products </a>
-            <a class="nav-bar-a" href="contact.html"> Contact Us </a>
-            <a class="nav-bar-a" href="login.html"> Login </a>
-            <a class="nav-bar-a" href="admin.html"> Admin </a>
         </div>
 
         <!-- Cart -->
