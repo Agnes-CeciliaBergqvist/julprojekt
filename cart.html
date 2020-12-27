@@ -61,7 +61,22 @@
     </div>
   </div>
 
-  <input id="cart-checkout" type="button" onclick="clickAlert()" value="CHECKOUT">
+
+  <button data-modal-target="#modal" id="checkout-popup">CHECKOUT</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">CHECKOUT</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      GRATTIS DITT KÖP ÄR GENOMFÖRT.
+      DIN ORDER ÄR PÅVÄG!
+
+      KLICKA NEDAN FÖR ATT LADDA HEM FAKTURA.
+      PDF-FAKTURA
+    </div>
+  </div>
+  <div id="overlay"></div>
 
 
 
