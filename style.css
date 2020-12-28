@@ -480,7 +480,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 4rem; }
 
 #checkout-popup:hover {
   background-color: white;
@@ -637,4 +638,8 @@ a:visited {
     align-items: center;
     text-align: center; }
   .footer-nav, .footer-social {
-    display: none; } }
+    display: none; }
+  /* Brands on product site */
+  .index-headline-brand {
+    margin: 1.2rem;
+    font-size: 0.7rem; } }
