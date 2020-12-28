@@ -477,7 +477,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 4rem; }
 
 #checkout-popup:hover {
   background-color: white;
@@ -616,4 +617,7 @@ a:visited {
   .topnav.responsive a {
     float: none;
     display: flex;
-    text-align: left; } }
+    text-align: left; }
+  .index-headline-brand {
+    margin: 1.2rem;
+    font-size: 0.7rem; } }
