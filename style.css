@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: futura; }
 
-/* Admin parent box*/
+/* Admin parent box */
 .admin-parent-box {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -213,6 +213,9 @@
   align-items: center;
   justify-content: space-evenly;
   flex-flow: row wrap; }
+
+.icon {
+  color: black; }
 
 /* Items in nav bar */
 .nav-bar-a {
@@ -484,12 +487,7 @@
   color: black;
   border: 2px, black; }
 
-/* Readmore button on product */
-#myBtn {
-  color: coral;
-  border: none; }
-
-/* Design for button and  for "add to cart"*/
+/* Design for button and  for "add to cart" */
 .index-btn-flex, .button {
   border: 5px, black;
   padding: 6px;
@@ -590,21 +588,19 @@ a:visited {
   text-align: center;
   padding-bottom: 1.5rem; }
 
-/* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
+/* Responsiveness for screens 600px and smaller */
 @media screen and (max-width: 600px) {
+  /* Hide all links. Show the link that contains should open and close the topnav (.icon) */
   .topnav a {
     display: none; }
   .topnav a.icon {
     float: right;
     display: flex;
-    flex-direction: inherit; } }
-
-.icon {
-  color: white;
-  display: none; }
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+    flex-direction: inherit; }
+  .icon {
+    color: white;
+    display: none; }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   .topnav.responsive {
     position: relative; }
   .topnav.responsive a.icon {
@@ -616,4 +612,23 @@ a:visited {
   .topnav.responsive a {
     float: none;
     display: flex;
-    text-align: left; } }
+    text-align: left; }
+  /* Font size on blog posts p on start.html for mobile */
+  #start-hero-text {
+    padding: 2rem;
+    font-size: 2rem; }
+  /* Margins for startpage */
+  #start-blog {
+    margin: 0.5rem;
+    height: 5rem; }
+  /* Margins on admin page */
+  .admin-input-fields {
+    width: 100%;
+    margin: 2rem; }
+  /* Footer */
+  #footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center; }
+  .footer-nav, .footer-social {
+    display: none; } }
