@@ -19,7 +19,6 @@
     }
 
 
-
     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
     .topnav.responsive { 
         position: relative;
@@ -60,6 +59,16 @@
         margin: 2rem;
     }
 
+    #start-new-products {
+      margin-top: 93rem;
+    }
+    #start-new-products-headline {
+      font-size: 2.6rem;
+
+    }
+    #start-blog-posts-p{
+      font-size: 0.8rem;
+    }
 
     /* Footer */
     #footer {
