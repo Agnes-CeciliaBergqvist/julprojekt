@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shopping cart-Checkout</title>
-  
+
   <!-- Fontawesome-->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -24,22 +24,22 @@
 
   <header id="header">
 
-           <!-- Menu options -->
-        
-           <div class="topnav" id="nav-bar">
-            <a class="nav-bar-a" href="start.html"> Home </a>
-            <a class="nav-bar-a" href="index.html"> Products </a>
-            <a class="nav-bar-a" href="contact.html"> Contact Us </a>
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-        </div>
+    <!-- Menu options -->
 
-        <!-- Logo -->
-        <div id="header-logo">
-          <a href="start.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
-        </div>
+    <div class="topnav" id="nav-bar">
+      <a class="nav-bar-a" href="start.html"> Home </a>
+      <a class="nav-bar-a" href="index.html"> Products </a>
+      <a class="nav-bar-a" href="contact.html"> Contact Us </a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Logo -->
+    <div id="header-logo">
+      <a href="start.html"><img src="images/Nail City Logo.png" alt="Logo Nail City"></a>
+    </div>
 
     <!-- Cart -->
     <div id="cart-wrapper">
@@ -49,25 +49,15 @@
   </header>
 
 
-
-
-  </header>
-
-
-  <!--the shopping cart flexbox with total price-->
+  <!-- The shopping cart flexbox with total price -->
   <div class="products-container">
     <div class="product-header">
-      <h5 class="product-title"></h5>
-      <h5 class="price"></h5>
-      <h5 class="quantity"></h5>
-      <h5 class="total"></h5>
     </div>
     <div class="products">
-
     </div>
   </div>
 
-
+  <!-- Modal popup when clicking on "checkout" -->
   <button data-modal-target="#modal" id="checkout-popup">CHECKOUT</button>
   <div class="modal" id="modal">
     <div class="modal-header">
@@ -75,17 +65,13 @@
       <button data-close-button class="close-button">&times;</button>
     </div>
     <div class="modal-body">
-      GRATTIS DITT KÖP ÄR GENOMFÖRT.
-      DIN ORDER ÄR PÅVÄG!
-
-      KLICKA NEDAN FÖR ATT LADDA HEM FAKTURA.
-      PDF-FAKTURA
+      GRATTIS DITT KÖP ÄR GENOMFÖRT!<br> DIN ORDER ÄR PÅVÄG.
     </div>
   </div>
   <div id="overlay"></div>
 
-  
 
+<!-- Footer -->
   <footer id="footer">
 
     <nav class="footer-nav">
@@ -114,12 +100,7 @@
       <div class="social"> <i class="fab fa-twitter-square"></i> Twitter</div>
 
     </nav>
-
-
   </footer>
 
-
-
 </body>
-
 </html>
