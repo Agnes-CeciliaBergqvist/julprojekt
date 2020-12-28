@@ -100,6 +100,7 @@ function displayCart() {
             <img class="cart-card-img" src="images/essie01.webp" alt="essie nail polish">
       </div>
             <span>${mappedItems.name}</span>
+            <span>${mappedItems.tag}</span>
             <div class="price">${mappedItems.price} SEK</div>
             <span>${mappedItems.inCart}</span>
            </div>
