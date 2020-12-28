@@ -1,9 +1,10 @@
-/* Img and text on product site as header*/
+/* Image and text on product site as header */
 .index-flexbox-head {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .index-prd-head {  
     width: 20rem;
     background-color: black;
@@ -12,11 +13,13 @@
     display: flex;
     flex-direction: row;
 }
+
 .index-prd-img {
     height: 100%;
     width: 100%;
     display: flex;
 }
+
 .index-prd-head>p {
     color: white;
     font-size: 1rem;
@@ -25,6 +28,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .index-headline-brand {
     display: flex;
     justify-content: center;
@@ -32,20 +36,25 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 .index-headline-brand>span:hover {
     text-decoration: underline;
     cursor: pointer; 
 }
+
 .index-headline-brand>span {
     margin: 10px;
 }
-/* Containter to product cards on admin.html (admin-new-product) and index.html (test) pages */
+
+
+/* Containter for product cards on admin.html (admin-new-product) on pages */
 .admin-new-product, .test {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}        
+}   
+
 /* Product cards */
 .index-article-card { 
     display: flex;
@@ -60,11 +69,13 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     border-style: solid; 
-    }
+}
+
 .index-card-img {
     width: 50%;
     margin: auto;
 }
+
 /* Design for "add to cart" */
 .index-btn-flex {
     border: 5px, black;
@@ -73,12 +84,14 @@
     color: white;
     background-color: black;
 }
+
 /* Change color when hoovering over button */
 .index-btn-flex:hover { 
     background-color: white;
     color: black;
     border: 2px, black; 
 }
+
 /* Size on h3 */
 .index-h3 {
     font-size: 13px;

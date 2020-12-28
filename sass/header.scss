@@ -12,15 +12,22 @@
     flex-flow: row wrap;
 }
 
+.icon {
+    color: black;
+}
+
+
 /* Items in nav bar */ 
 .nav-bar-a {
     text-decoration: none;
     color: white;
     padding: 14px 20px;  
 }
+
 #header-logo {
     padding-left: 1.5rem;
 }
+
 
 /* Cart in nav bar */
 #cart-wrapper {
@@ -34,7 +41,6 @@
     color: black;
     font-size: 14px;
 }
-
 
 #cart-wrapper i {
     font-size: 18px;
