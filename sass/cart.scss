@@ -61,7 +61,6 @@
 
 .products {
     width: 100%;
-     // display: flex;//denna gör så att priset och namnet ligger på olika rader
     flex-wrap: wrap;
 }
 .cart-card-img {
@@ -86,7 +85,7 @@
 }
 
 
-//style for modal box when checking out
+// Style for modal box when checking out
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -151,9 +150,9 @@
     opacity: 1;
     pointer-events: all;
 }
-//color for button 
+// Color for button 
  #checkout-popup {
-    border: 5px, black;
+    border: 5px black;
     padding: 6px;
     margin-top: 1rem;
     color: white;
@@ -165,9 +164,9 @@
     margin-bottom: 4rem;
 
 }
-//change color when hoovering over btn//
+// Change color when hoovering over btn//
  #checkout-popup:hover { 
     background-color: white;
     color: black;
-    border: 2px, black; 
+    border: 2px black; 
 }

@@ -139,7 +139,7 @@
   background-color: white;
   color: black;
   border: solid;
-  border: 5px, black; }
+  border: 5px black; }
 
 /* White buttons*/
 #start-categories-buttons-white {
@@ -338,7 +338,7 @@
 
 /* Design for "add to cart" */
 .index-btn-flex {
-  border: 5px, black;
+  border: 5px black;
   padding: 6px;
   margin-top: 1rem;
   color: white;
@@ -348,7 +348,7 @@
 .index-btn-flex:hover {
   background-color: white;
   color: black;
-  border: 2px, black; }
+  border: 2px black; }
 
 /* Size on h3 */
 .index-h3 {
@@ -479,7 +479,7 @@
   pointer-events: all; }
 
 #checkout-popup {
-  border: 5px, black;
+  border: 5px black;
   padding: 6px;
   margin-top: 1rem;
   color: white;
@@ -493,11 +493,11 @@
 #checkout-popup:hover {
   background-color: white;
   color: black;
-  border: 2px, black; }
+  border: 2px black; }
 
 /* Design for button and  for "add to cart" */
 .index-btn-flex, .button {
-  border: 5px, black;
+  border: 5px black;
   padding: 6px;
   margin-top: 1rem;
   color: white;
@@ -507,11 +507,11 @@
 .index-btn-flex:hover, .button:hover {
   background-color: white;
   color: black;
-  border: 2px, black; }
+  border: 2px black; }
 
 /* Design for "add to cart"-button */
 #cart-checkout {
-  border: 5px, black;
+  border: 5px black;
   padding: 6px;
   margin-top: 1rem;
   color: white;
@@ -525,27 +525,7 @@
 #cart-checkout:hover {
   background-color: white;
   color: black;
-  border: 2px, black; }
-
-/* Load more button */
-.index-loadMoreBtn-con {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem; }
-
-/* Design for "Load Products" */
-.index-loadMoreBtn, .button {
-  border: 5px, black;
-  padding: 6px;
-  margin-top: 1rem;
-  color: white;
-  background-color: black; }
-
-/* Change color when hoovering over btn */
-.index-loadMoreBtn:hover, .button:hover {
-  background-color: white;
-  color: black;
-  border: 2px, black; }
+  border: 2px black; }
 
 /* Footer from start.html */
 #footer {

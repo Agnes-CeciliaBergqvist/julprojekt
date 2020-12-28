@@ -1,14 +1,12 @@
 
-//data from local storage in admin.js is read below 
+// Data from local storage in admin.js is read below 
 const localData = localStorage.getItem("productList")
-
 const convertedData = JSON.parse(localData);
-
 convertedData.map(e => {
 
   const publishedCard = document.querySelector(".test");
 
-  //creates a new productcard for each item in array 
+  // Creates a new productcard for each item in array 
   const newProductCardS = document.createElement("div");
   newProductCardS.innerText = e.name;
   newProductCardS.innerHTML =`
@@ -24,9 +22,3 @@ convertedData.map(e => {
 publishedCard.appendChild(newProductCardS);
 
 })
-
-
-
-
-
-

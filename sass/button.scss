@@ -1,7 +1,7 @@
 
 /* Design for button and  for "add to cart" */
 .index-btn-flex, .button {
-    border: 5px, black;
+    border: 5px black;
     padding: 6px;
     margin-top: 1rem;
     color: white;
@@ -13,13 +13,13 @@
 .index-btn-flex:hover, .button:hover { 
     background-color: white;
     color: black;
-    border: 2px, black; 
+    border: 2px black; 
 }
 
 
 /* Design for "add to cart"-button */
 #cart-checkout {
-    border: 5px, black;
+    border: 5px black;
     padding: 6px;
     margin-top: 1rem;
     color: white;
@@ -35,5 +35,5 @@
 #cart-checkout:hover { 
     background-color: white;
     color: black;
-    border: 2px, black; 
+    border: 2px black; 
 }
