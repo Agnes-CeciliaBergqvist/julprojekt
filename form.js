@@ -1,5 +1,5 @@
-// Create object to store data inputs in
 
+// Create object to store data inputs in
 var fields = {};
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -23,7 +23,7 @@ function isEmail(email) {
     return regex.test(String(email).toLocaleLowerCase());
 }
 
-/* Creates fields validation  */
+// Creates fields validation 
 function fieldValidation(field, validationFunction) {
     if (field == null) return false;
     let isFieldValid = validationFunction(field.value)
@@ -43,7 +43,7 @@ function isValid() {
     return valid;
 }
 
-// constructor so function sendContact can show personalized message in alert
+// Constructor so function sendContact can show personalized message in alert
 class User {
     constructor(formName, email, newsletter, question) {
         this.firstName = formName;
@@ -53,7 +53,7 @@ class User {
     }
 }
 
-// function in button to send form and showing alerts for either error or success based on validated data - isValid
+// Function in button to send form and showing alerts for either error or success based on validated data - isValid
 function sendContact() {
     if (isValid()) {
         let usr = new User(formName.value, formEmail.value, formNewsletter

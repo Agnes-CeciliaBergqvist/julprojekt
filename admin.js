@@ -1,8 +1,7 @@
 // ADMIN PAGE - CREATE AND DELETE PRODUCTS 
 
 
-// global variable storing the list of names
-// this can be used for local storage and to be used for published new prds
+// Global variable storing the list of names, this can be used for local storage and to be used for published new products
 let products = []
 document.getElementById("admin-add-name").addEventListener("click", addProduct)
 
@@ -10,13 +9,13 @@ document.getElementById("admin-add-name").addEventListener("click", addProduct)
 // Function to add products to product page (index.html)
 function addProduct() {
 
-    // values from input fields 
+    // Values from input fields 
     var id = 0;
     var adminHeadline = document.querySelector("#admin-headline-input").value;
     var adminDescription = document.querySelector("#admin-decsrip-input").value;
     var adminPrice = document.querySelector("#admin-price-input").value;
-    var adminPrdImage = document.createElement("img"); // declares and creates img element
-    adminPrdImage.src = "images/opi04.webp"; // sets image source
+    var adminPrdImage = document.createElement("img");                                      // Declares and creates img element
+    adminPrdImage.src = "images/opi04.webp";                                                // Sets image source
 
     let product = {}
     product.name = adminHeadline;
@@ -30,7 +29,7 @@ function addProduct() {
 
     var cleanedData
     if (existingData) {
-        // store new products added by admin in local storage
+        // Stores new products added by admin in local storage
         id = parseInt(localStorage.getItem("id"))
         product.id = id + 1
         products.push(product)
@@ -47,18 +46,18 @@ function addProduct() {
 
     localStorage.setItem("productList", JSON.stringify(cleanedData));
 
-    //reload the page so the array doesn't multiply 
+    // Reload the page so the array doesn't multiply 
     location.reload()
 }
 
-// declares where to put product card on admin.hmtl
+// Declares where to put product card on admin.hmtl
 const adminHTML = document.querySelector(".admin-new-product")
 
-//calling the function below that creates product cards on admin.html 
+// Calling the function below that creates product cards on admin.html 
 view()
 
 
-//function that creates the card on admin page 
+// Function that creates the card on admin page 
 function view() {
 
     const adminLocalData = localStorage.getItem("productList");
@@ -79,17 +78,16 @@ function view() {
 
     })
 }
-// Delete button on product cards
 
-// Gets every delete button from the document
+
+// Delete button on product cards. Gets every delete button from the document
 const removeBtn = document.querySelectorAll(".index-btn-flex");
 removeBtn.textContent = 'Delete';
 
 const div = document.querySelectorAll(".admin-new-product");
 const article = document.querySelectorAll(".index-article-card");
 
-//Function that removes productcard from index and localstorage
-//Add eventListener on delete buttons
+//Function that removes productcard from index and localstorage. Add eventListener on delete buttons
 article.forEach(el => el.addEventListener('click', event => {
     if(event.target.tagName === 'BUTTON') {
         let button = event.target;
@@ -110,7 +108,7 @@ article.forEach(el => el.addEventListener('click', event => {
             }
             if(index === undefined) return 
 
-            prdList.splice(index,1); // delete item at index
+            prdList.splice(index,1);                                                        // Deletes item at index
             localStorage.setItem("productList", JSON.stringify(prdList));
         }
     }
