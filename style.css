@@ -211,7 +211,7 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-flow: row wrap; }
 
 .icon {
@@ -224,18 +224,26 @@
   padding: 14px 20px; }
 
 #header-logo {
-  padding-left: 1.5rem; }
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  order: -1; }
 
 /* Cart in nav bar */
+.fa-shopping-cart {
+  padding-right: 2rem; }
+
 #cart-wrapper {
-  padding: 0.5rem;
+  padding: 0.8rem;
   color: white;
-  background-color: white; }
+  background-color: white;
+  position: absolute;
+  right: 2rem; }
 
 #cart-wrapper > a {
   text-decoration: none;
   color: black;
-  font-size: 14px; }
+  font-size: 14px;
+  padding-right: 0.5rem; }
 
 #cart-wrapper i {
   font-size: 18px;
