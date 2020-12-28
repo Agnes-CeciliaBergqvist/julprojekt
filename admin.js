@@ -81,7 +81,7 @@ function view() {
 }
 // Delete button on product cards
 
-// Declares where to put the deletebutton on adminpage
+// Gets every delete button from the document
 const removeBtn = document.querySelectorAll(".index-btn-flex");
 removeBtn.textContent = 'Delete';
 
@@ -89,6 +89,7 @@ const div = document.querySelectorAll(".admin-new-product");
 const article = document.querySelectorAll(".index-article-card");
 
 //Function that removes productcard from index and localstorage
+//Add eventListener on delete buttons
 article.forEach(el => el.addEventListener('click', event => {
     if(event.target.tagName === 'BUTTON') {
         let button = event.target;
