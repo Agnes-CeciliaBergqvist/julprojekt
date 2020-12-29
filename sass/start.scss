@@ -38,7 +38,7 @@
 
 
 /* Black buttons */
-#start-categories-buttons {
+.start-categories-buttons {
     width: 20rem;
     height: 6rem;
     margin: 1rem;
@@ -52,15 +52,14 @@
 }
 
 /* Changes color when hoovering over button */
-#start-categories-buttons:hover { 
+.start-categories-buttons:hover { 
     background-color: white;
     color: black;
-    border: solid;
-    border: 5px black;
+    border: solid 3px black;
 }
 
 /* White buttons*/
-#start-categories-buttons-white {
+.start-categories-buttons-white {
     width: 20rem;
     height: 6rem;
     margin: 1rem;
@@ -74,7 +73,7 @@
     flex-grow: 1;
 }
 
-#start-categories-buttons-white:hover {
+.start-categories-buttons-white:hover {
     background-color: black;
     color: white;
 }
@@ -88,7 +87,7 @@
     margin: 5rem;
 }
 
-#start-blog-posts {
+.start-blog-posts {
     height: 30rem;
     width: 20rem;
     background-color: black;
@@ -98,7 +97,7 @@
     flex-direction: row;
 }
 
-#start-blog-posts-p {
+.start-blog-posts-p {
     color: white;
     font-size: 1rem;
     padding: 2rem;
@@ -108,7 +107,7 @@
 }
 
 
-#start-blog-posts>img{
+.start-blog-posts>img{
     height: 100%;
     width: 100%;
     display: flex;

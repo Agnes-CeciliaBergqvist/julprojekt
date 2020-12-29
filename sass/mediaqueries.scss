@@ -40,6 +40,10 @@
       text-align: left;
     }
   
+    /* Margin on buttons on start.html */
+    #start-categories {
+      margin: 1rem;
+    }
 
     /* Font size on blog posts p on start.html for mobile */
     #start-hero-text {
@@ -47,16 +51,10 @@
     font-size: 2rem;	        
     }
 
-    /* Margins for startpage */
+    /* Margins for start page */
     #start-blog {
         margin: 0.5rem;
         height: 5rem;
-    }
-
-    /* Margins on admin page */
-    .admin-input-fields {
-        width: 100%;
-        margin: 2rem;
     }
 
     #start-new-products {
@@ -65,10 +63,15 @@
 
     #start-new-products-headline {
       font-size: 2.6rem;
+      padding-top: 2rem;
     }
 
-    #start-blog-posts-p {
+    .start-blog-posts-p {
       font-size: 0.8rem;
+    }
+
+    #start-below-new-products {
+      height: 5rem;
     }
 
 
@@ -78,7 +81,15 @@
       font-size: 0.7rem;
     }
 
-    
+
+    /* Margins on admin page */
+    .admin-input-fields {
+      width: 100%;
+      margin: 2rem;
+    }
+  
+
+
     /* Footer */
     #footer {
         flex-direction: column-reverse;
